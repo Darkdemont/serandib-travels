@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELIN - Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@700;900&family=Yaldevi:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span class="top-bar-item">
+                    <i class="fas fa-calendar-alt"></i> Thursday, Mar 26, 2021
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-map-marker-alt"></i> Hollywood, America
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-clock"></i> Mon-Fri: 10 AM - 5 PM
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-compass"></i>
+                <span>Ceylonova Tours</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="destinations.html" class="nav-link">DESTINATIONS</a>
+                <a href="#" class="nav-link" style="display: none;">TOURS</a>
+                <a href="#" class="nav-link" style="display: none;">PAGES</a>
+                <a href="#" class="nav-link" style="display: none;">BLOG</a>
+            </nav>
+
+            <div class="nav-right">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="#" class="login-btn"><i class="fas fa-user"></i> LOGIN/REGISTER</a>
+                <a href="#" class="book-now-btn">BOOK NOW</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section / Slider -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('images/home1.svg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <p class="hero-welcome-sinhala">ආයුබෝවන්</p>
+                    <p class="hero-subtitle">Amazing Places</p>
+                    <h1 class="hero-title">Make Your Trip Fun & Noted</h1>
+                    <p class="hero-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                    <button class="hero-btn">Discover More</button>
+                </div>
+            </div>
+
+            <div class="hero-slide" style="background-image: url('images/home2.svg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <p class="hero-welcome-sinhala">ආයුබෝවන්</p>
+                    <p class="hero-subtitle">Explore Destinations</p>
+                    <h1 class="hero-title">Adventure Awaits You</h1>
+                    <p class="hero-description">
+                        Discover the world's most beautiful destinations and unforgettable experiences
+                    </p>
+                    <button class="hero-btn">Discover More</button>
+                </div>
+            </div>
+
+            <div class="hero-slide" style="background-image: url('images/home3.svg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <p class="hero-welcome-sinhala">ආයුබෝවන්</p>
+                    <p class="hero-subtitle">Plan Your Journey</p>
+                    <h1 class="hero-title">Unforgettable Memories</h1>
+                    <p class="hero-description">
+                        Create lasting memories with our curated travel packages and expert guides
+                    </p>
+                    <button class="hero-btn">Discover More</button>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="hero-arrow hero-arrow-left" id="prevSlide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="hero-arrow hero-arrow-right" id="nextSlide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="features-header">
+                <p class="features-label">Core Features</p>
+                <h2 class="features-title">Find <span class="teal-text">Travel Perfection</span></h2>
+                <p class="features-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3 class="feature-title">Tell Us What You Want To Do</h3>
+                    <p class="feature-text">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+                    </p>
+                    <a href="#" class="feature-reviews">100+ Reviews</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <h3 class="feature-title">Share Your Travel Locations</h3>
+                    <p class="feature-text">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+                    </p>
+                    <a href="#" class="feature-reviews">100+ Reviews</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-signs-post"></i>
+                    </div>
+                    <h3 class="feature-title">Share Your Travel Preference</h3>
+                    <p class="feature-text">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+                    </p>
+                    <a href="#" class="feature-reviews">100+ Reviews</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3 class="feature-title">Here 100% Trusted Tour Agency</h3>
+                    <p class="feature-text">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+                    </p>
+                    <a href="#" class="feature-reviews">100+ Reviews</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations Section -->
+    <section class="top-destinations-section">
+        <div class="top-destinations-container">
+            <div class="top-destinations-header">
+                <p class="top-destinations-label">Top Destinations</p>
+                <h2 class="top-destinations-title">Explore <span class="teal-highlight">Top Destinations</span></h2>
+                <p class="top-destinations-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
+            </div>
+
+            <div class="top-destinations-grid">
+                <!-- Large Featured Card - Caspian Valley -->
+                <div class="top-dest-card large-featured">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop" alt="Caspian Valley">
+                    <div class="top-dest-overlay"></div>
+                    <div class="top-dest-content">
+                        <p class="top-dest-country">Italy</p>
+                        <h3 class="top-dest-name">Caspian Valley</h3>
+                    </div>
+                    <span class="top-dest-badge">18 Tours</span>
+                </div>
+
+                <!-- Small Cards Grid -->
+                <div class="small-cards-grid">
+                    <!-- Russia Card -->
+                    <div class="top-dest-card small">
+                        <img src="https://images.unsplash.com/photo-1547448415-e9f5b28e570d?w=600&h=400&fit=crop" alt="Russia">
+                        <div class="top-dest-overlay"></div>
+                        <div class="top-dest-content">
+                            <p class="top-dest-country">Moscow</p>
+                            <h3 class="top-dest-name">Russia</h3>
+                        </div>
+                        <span class="top-dest-badge">15 Tours</span>
+                    </div>
+
+                    <!-- America Card -->
+                    <div class="top-dest-card small">
+                        <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=600&h=400&fit=crop" alt="America">
+                        <div class="top-dest-overlay"></div>
+                        <div class="top-dest-content">
+                            <p class="top-dest-country">Florida</p>
+                            <h3 class="top-dest-name">America</h3>
+                        </div>
+                        <span class="top-dest-badge">32 Tours</span>
+                    </div>
+
+                    <!-- London Card (Tall) -->
+                    <div class="top-dest-card tall">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&h=800&fit=crop" alt="London">
+                        <div class="top-dest-overlay"></div>
+                        <div class="top-dest-content">
+                            <p class="top-dest-country">England</p>
+                            <h3 class="top-dest-name">London</h3>
+                        </div>
+                        <span class="top-dest-badge">15 Tours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages Section -->
+    <section class="packages-section">
+        <div class="packages-container">
+            <div class="packages-header">
+                <div class="packages-header-left">
+                    <p class="packages-label">Top Pick</p>
+                    <h2 class="packages-title">Best <span class="teal-text">Tour Packages</span></h2>
+                    <p class="packages-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                    </p>
+                </div>
+                <div class="packages-arrows">
+                    <button class="package-arrow prev-package"><i class="fas fa-chevron-left"></i></button>
+                    <button class="package-arrow next-package"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="packages-slider-wrapper">
+                <div class="packages-slider">
+                    <!-- Package Card 1 -->
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&h=400&fit=crop');">
+                            <span class="package-duration"><i class="fas fa-calendar-alt"></i> 5 Days Tours</span>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-location">Greece</p>
+                            <h3 class="package-name">Santorini, Oia</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(38)</span>
+                            </div>
+                            <p class="package-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                            <div class="package-price">$180.00 <span>| Per person</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Package Card 2 -->
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?w=600&h=400&fit=crop');">
+                            <span class="package-duration"><i class="fas fa-calendar-alt"></i> 9 Days Tours</span>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-location">Croatia</p>
+                            <h3 class="package-name">Piazza Castello</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                            <p class="package-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                            <div class="package-price">$170.00 <span>| Per person</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Package Card 3 -->
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=400&fit=crop');">
+                            <span class="package-duration"><i class="fas fa-calendar-alt"></i> 9 Days Tours</span>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-location">Greece</p>
+                            <h3 class="package-name">Santorini, Oia</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(38)</span>
+                            </div>
+                            <p class="package-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                            <div class="package-price">$180.00 <span>| Per person</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Package Card 4 -->
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=600&h=400&fit=crop');">
+                            <span class="package-duration"><i class="fas fa-calendar-alt"></i> 8 Days Tours</span>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-location">Maldives</p>
+                            <h3 class="package-name">Hurawalhi Island</h3>
+                            <div class="package-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(18)</span>
+                            </div>
+                            <p class="package-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                            <div class="package-price">$260.00 <span>| Per person</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Categories -->
+            <div class="categories-wrapper">
+                <div class="category-box-title">
+                    <h3>Top<br>Categories</h3>
+                </div>
+                <div class="categories-slider">
+                    <div class="category-item">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <p>Beach Tours</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-person-swimming"></i>
+                        <p>Surfing</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-binoculars"></i>
+                        <p>Safari</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-bicycle"></i>
+                        <p>Cycling</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-person-hiking"></i>
+                        <p>Trekings</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-campground"></i>
+                        <p>Camping</p>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-mountain"></i>
+                        <p>Hiking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Last Minute Deals Section -->
+    <section class="deals-section">
+        <div class="deals-container">
+            <div class="deals-header">
+                <p class="deals-label">Top Deals</p>
+                <h2 class="deals-title">The Last <span class="teal-text">Minute Deals</span></h2>
+                <p class="deals-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
+            </div>
+
+            <div class="deals-grid">
+                <!-- Deal Card 1 -->
+                <div class="deal-card">
+                    <div class="deal-image" style="background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600&h=400&fit=crop');">
+                        <div class="deal-overlay"></div>
+                        <div class="deal-content">
+                            <p class="deal-country">Norway</p>
+                            <h3 class="deal-name">Norway Lake</h3>
+                            <div class="deal-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(16)</span>
+                            </div>
+                            <div class="deal-footer">
+                                <div class="deal-price">$180.00 <span>| Per person</span></div>
+                                <div class="deal-duration"><i class="fas fa-calendar-alt"></i> 6 Days Tours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deal Card 2 -->
+                <div class="deal-card">
+                    <div class="deal-image" style="background-image: url('https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?w=600&h=400&fit=crop');">
+                        <div class="deal-overlay"></div>
+                        <div class="deal-content">
+                            <p class="deal-country">Usa</p>
+                            <h3 class="deal-name">New York City</h3>
+                            <div class="deal-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                            <div class="deal-footer">
+                                <div class="deal-price">$140.00 <span>| Per person</span></div>
+                                <div class="deal-duration"><i class="fas fa-calendar-alt"></i> 3 Days Tours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deal Card 3 -->
+                <div class="deal-card">
+                    <div class="deal-image" style="background-image: url('https://images.unsplash.com/photo-1589197331516-4d84b72ebde3?w=600&h=400&fit=crop');">
+                        <div class="deal-overlay"></div>
+                        <div class="deal-content">
+                            <p class="deal-country">Maldives</p>
+                            <h3 class="deal-name">Male City</h3>
+                            <div class="deal-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                            <div class="deal-footer">
+                                <div class="deal-price">$140.00 <span>| Per person</span></div>
+                                <div class="deal-duration"><i class="fas fa-calendar-alt"></i> 3 Days Tours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deals-button-wrapper">
+                <button class="view-deals-btn">View All Deals</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <div class="testimonials-top">
+                <div class="testimonials-left">
+                    <p class="testimonials-label">Our Testimonails</p>
+                    <h2 class="testimonials-title">Good Reviews By <span class="teal-text">Clients</span></h2>
+                    <p class="testimonials-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                    </p>
+                </div>
+
+                <div class="testimonials-right">
+                    <div class="testimonial-box">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="testimonial-details">
+                                <p class="testimonial-text">
+                                    Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="author-avatar">
+                                    <div class="author-info">
+                                        <h4 class="author-name">Kelton Mick</h4>
+                                        <p class="author-job">Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Tours Slider -->
+            <div class="testimonial-tours-wrapper">
+                <div class="testimonial-tours-slider">
+                    <!-- Tour 1 -->
+                    <div class="testimonial-tour-card">
+                        <div class="tour-card-image" style="background-image: url('https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=400&h=300&fit=crop');">
+                            <span class="discount-badge yellow">30% OFF</span>
+                        </div>
+                        <div class="tour-card-content">
+                            <p class="tour-card-location">Croatia</p>
+                            <h3 class="tour-card-name">Piazza Castello</h3>
+                            <div class="tour-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                            <p class="tour-card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                            <div class="tour-card-footer">
+                                <span class="tour-card-days"><i class="fas fa-calendar-alt"></i> 9 Days Tours</span>
+                            </div>
+                            <div class="tour-card-price">$170.00 <span>| Per person</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Tour 2 -->
+                    <div class="testimonial-tour-card">
+                        <div class="tour-card-image" style="background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?w=400&h=300&fit=crop');">
+                            <span class="discount-badge">15% OFF</span>
+                        </div>
+                        <div class="tour-card-content">
+                            <p class="tour-card-location">Greece</p>
+                            <h3 class="tour-card-name">Santorini, Oia</h3>
+                            <div class="tour-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(18)</span>
+                            </div>
+                            <p class="tour-card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                            <div class="tour-card-footer">
+                                <span class="tour-card-days"><i class="fas fa-calendar-alt"></i> 7 Days Tours</span>
+                            </div>
+                            <div class="tour-card-price">$210.00 <span>| Per person</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Tour 3 -->
+                    <div class="testimonial-tour-card">
+                        <div class="tour-card-image" style="background-image: url('https://images.unsplash.com/photo-1589197331516-4d84b72ebde3?w=400&h=300&fit=crop');">
+                            <span class="discount-badge yellow">15% OFF</span>
+                        </div>
+                        <div class="tour-card-content">
+                            <p class="tour-card-location">Maldives</p>
+                            <h3 class="tour-card-name">Hurawalhi Island</h3>
+                            <div class="tour-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(22)</span>
+                            </div>
+                            <p class="tour-card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                            <div class="tour-card-footer">
+                                <span class="tour-card-days"><i class="fas fa-calendar-alt"></i> 8 Days Tours</span>
+                            </div>
+                            <div class="tour-card-price">$220.00 <span>| Per person</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Tour 4 -->
+                    <div class="testimonial-tour-card">
+                        <div class="tour-card-image" style="background-image: url('https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=400&h=300&fit=crop');">
+                            <span class="discount-badge">25% OFF</span>
+                        </div>
+                        <div class="tour-card-content">
+                            <p class="tour-card-location">Greece</p>
+                            <h3 class="tour-card-name">Athens</h3>
+                            <div class="tour-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(15)</span>
+                            </div>
+                            <p class="tour-card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                            <div class="tour-card-footer">
+                                <span class="tour-card-days"><i class="fas fa-calendar-alt"></i> 5 Days Tours</span>
+                            </div>
+                            <div class="tour-card-price">$195.00 <span>| Per person</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="why-choose-container">
+            <div class="why-choose-header">
+                <p class="why-choose-subtitle">Why Choose Us</p>
+                <h2 class="why-choose-title">Your Trusted <span class="highlight-teal">Travel Partner</span></h2>
+                <p class="why-choose-description">Leading The Way In Small Group Adventures For Over 20 Years. Discover How We're Redefining The Future Of Travel.</p>
+            </div>
+
+            <div class="why-choose-content">
+                <!-- Feature 1: 24/7 Support -->
+                <div class="why-feature-card blue-card top-left">
+                    <div class="feature-icon blue-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">24/7 Support</h3>
+                        <p class="feature-description">Tailor-made itineraries to suit your preferences and needs.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Tailored Itineraries -->
+                <div class="why-feature-card yellow-card top-right">
+                    <div class="feature-icon yellow-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Tailored Itineraries</h3>
+                        <p class="feature-description">Tailor-made itineraries to suit your preferences and needs.</p>
+                    </div>
+                </div>
+
+                <!-- Center Image -->
+                <div class="why-center-image" style="display: none;">
+                    <img src="images/hsection4.svg" alt="Traveler">
+                </div>
+
+                <!-- Feature 3: Trusted Service -->
+                <div class="why-feature-card yellow-card middle-left">
+                    <div class="feature-icon yellow-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Trusted Service</h3>
+                        <p class="feature-description">Tailor-made itineraries to suit your preferences and needs.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Exclusive Offers -->
+                <div class="why-feature-card green-card middle-right">
+                    <div class="feature-icon green-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Exclusive Offers</h3>
+                        <p class="feature-description">Tailor-made itineraries to suit your preferences and needs.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Easy Bookings -->
+                <div class="why-feature-card blue-card bottom-center">
+                    <div class="feature-icon blue-icon">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Easy Bookings</h3>
+                        <p class="feature-description">Tailor-made itineraries to suit your preferences and needs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Instagram Gallery -->
+        <div class="instagram-gallery">
+            <div class="instagram-images">
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=300&h=300&fit=crop" alt="Instagram 1">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687221038-404cb8830901?w=300&h=300&fit=crop" alt="Instagram 2">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=300&h=300&fit=crop" alt="Instagram 3">
+                </div>
+                <div class="instagram-item instagram-follow">
+                    <div class="instagram-follow-content">
+                        <i class="fab fa-instagram"></i>
+                        <p>@ Follow On Instagram</p>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220199-d0124f48f95b?w=300&h=300&fit=crop" alt="Instagram 4">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220147-a52e42f54b6c?w=300&h=300&fit=crop" alt="Instagram 5">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687221080-5cb261c645cb?w=300&h=300&fit=crop" alt="Instagram 6">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714?w=300&h=300&fit=crop" alt="Instagram 7">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+            <div class="footer-container">
+                <!-- Company Info -->
+                <div class="footer-column footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-compass"></i>
+                        <span>TRAVELIN</span>
+                    </div>
+                    <p class="footer-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque iaculis molestie sagittis maecenas aenean eget molestie sagittis.
+                    </p>
+                    <div class="footer-contact">
+                        <p><strong>PO Box:</strong> +47-252-254-2542</p>
+                        <p><strong>Location:</strong> Collins Street, sydney, Australia</p>
+                        <p><strong>Email:</strong> info@Travelin.com</p>
+                        <p><strong>Website:</strong> www.Travelin.com</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Link</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="newsletter-text">
+                        Jin our community of over 200,000 global readers who receives emails filled with news, promotions, and other good stuff.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-left">
+                    <p class="payment-text">We Support:</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-discover"></i>
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="footer-bottom-right">
+                    <select class="footer-select">
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                    </select>
+                    <select class="footer-select">
+                        <option>$ USD</option>
+                        <option>€ EUR</option>
+                        <option>£ GBP</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <div class="footer-copyright-container">
+                <p>2022 Travelin. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

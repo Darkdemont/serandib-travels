@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination List - TRAVELIN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span class="top-bar-item">
+                    <i class="fas fa-calendar-alt"></i> Thursday, Mar 26, 2021
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-map-marker-alt"></i> Hollywood, America
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-clock"></i> Mon-Fri: 10 AM - 5 PM
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-compass"></i>
+                <span>Ceylonova Tours</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="destinations.html" class="nav-link active">DESTINATIONS</a>
+                <a href="#" class="nav-link" style="display: none;">TOURS</a>
+                <a href="#" class="nav-link" style="display: none;">PAGES</a>
+                <a href="#" class="nav-link" style="display: none;">BLOG</a>
+            </nav>
+
+            <div class="nav-right">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="#" class="login-btn"><i class="fas fa-user"></i> LOGIN/REGISTER</a>
+                <a href="#" class="book-now-btn">BOOK NOW</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header destinations-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1 class="page-header-title">DESTINATION LIST</h1>
+            <div class="page-header-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">|</span>
+                <span>Destination Lists</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations-section">
+        <div class="destinations-container">
+            <!-- Section Header -->
+            <div class="destinations-intro">
+                <p class="destinations-subtitle">Top Destinations</p>
+                <h2 class="destinations-title">Explore <span class="highlight-text">Top Destinations</span></h2>
+                <p class="destinations-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
+            </div>
+
+            <!-- Search and Filter Bar -->
+            <div class="filter-search-bar">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search destinations, cities, countries...">
+                </div>
+                
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-globe"></i> All Destinations
+                    </button>
+                    <button class="filter-btn" data-filter="asia">
+                        <i class="fas fa-map"></i> Asia
+                    </button>
+                    <button class="filter-btn" data-filter="europe">
+                        <i class="fas fa-landmark"></i> Europe
+                    </button>
+                    <button class="filter-btn" data-filter="america">
+                        <i class="fas fa-flag-usa"></i> America
+                    </button>
+                    <button class="filter-btn" data-filter="africa">
+                        <i class="fas fa-mountain"></i> Africa
+                    </button>
+                    <button class="filter-btn" data-filter="oceania">
+                        <i class="fas fa-water"></i> Oceania
+                    </button>
+                </div>
+
+                <div class="sort-dropdown">
+                    <select id="sortSelect">
+                        <option value="default">Sort By</option>
+                        <option value="name">Name (A-Z)</option>
+                        <option value="tours-high">Most Tours</option>
+                        <option value="tours-low">Least Tours</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Results Count -->
+            <div class="results-info">
+                <p>Showing <span id="resultCount">6</span> destinations</p>
+            </div>
+
+            <!-- Destinations Grid -->
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Destination Card - Sri Lanka Explorer Tour -->
+                <a href="destination-detail.html?id=sri-lanka-explorer" class="destination-card" data-category="asia" data-name="Sri Lanka Explorer Tour" data-tours="1">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Sri Lanka">
+                        <div class="destination-overlay"></div>
+                        <span class="featured-badge">⭐ Featured</span>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Sri Lanka</span>
+                        <h3 class="destination-name">Sri Lanka Explorer Tour</h3>
+                        <span class="destination-tours">4 Days / 3 Nights</span>
+                    </div>
+                </a>
+
+                <!-- Destination Card - Classic Sri Lanka Tour -->
+                <a href="destination-detail.html?id=classic-sri-lanka" class="destination-card" data-category="asia" data-name="Classic Sri Lanka Tour" data-tours="1">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=600&h=400&fit=crop" alt="Sri Lanka">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Sri Lanka</span>
+                        <h3 class="destination-name">Classic Sri Lanka Tour</h3>
+                        <span class="destination-tours">6 Days / 5 Nights</span>
+                    </div>
+                </a>
+
+                <!-- Destination Card - Sri Lanka Cultural & Beach Tour -->
+                <a href="destination-detail.html?id=cultural-beach-sri-lanka" class="destination-card" data-category="asia" data-name="Sri Lanka Cultural & Beach Tour" data-tours="1">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600&h=400&fit=crop" alt="Sri Lanka">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Sri Lanka</span>
+                        <h3 class="destination-name">Sri Lanka Cultural & Beach Tour</h3>
+                        <span class="destination-tours">7 Days / 6 Nights</span>
+                    </div>
+                </a>
+
+                <!-- Destination Card 1 -->
+                <a href="destination-detail.html?id=caspian-valley" class="destination-card" data-category="asia" data-name="Caspian Valley" data-tours="24">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1541696443271-cd4137c4d921?w=600&h=400&fit=crop" alt="Caspian Valley">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Asia</span>
+                        <h3 class="destination-name">Caspian Valley</h3>
+                        <span class="destination-tours">24 Tours</span>
+                    </div>
+                </a>
+
+                <!-- Destination Card 2 -->
+                <a href="destination-detail.html?id=japan" class="destination-card" data-category="asia" data-name="Japan" data-tours="21">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop" alt="Japan">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Tokyo</span>
+                        <h3 class="destination-name">Japan</h3>
+                        <span class="destination-tours">21 Tours</span>
+                    </div>
+                </a>
+
+                <!-- Destination Card 3 -->
+                <a href="destination-detail.html?id=russia" class="destination-card" data-category="europe" data-name="Russia" data-tours="15">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1547448415-e9f5b28e570d?w=600&h=400&fit=crop" alt="Russia">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Moscow</span>
+                        <h3 class="destination-name">Russia</h3>
+                        <span class="destination-tours">15 Tours</span>
+                    </div>
+                </a>
+
+                <!-- Destination Card 4 -->
+                <a href="destination-detail.html?id=thailand" class="destination-card" data-category="asia" data-name="Thailand" data-tours="24">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop" alt="Thailand">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Bangkok</span>
+                        <h3 class="destination-name">Thailand</h3>
+                        <span class="destination-tours">24 Tours</span>
+                    </div>
+                </a>
+
+                <!-- Destination Card 5 -->
+                <a href="destination-detail.html?id=america" class="destination-card" data-category="america" data-name="America" data-tours="32">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=600&h=400&fit=crop" alt="America">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Florida</span>
+                        <h3 class="destination-name">America</h3>
+                        <span class="destination-tours">32 Tours</span>
+                    </div>
+                </a>
+
+                <!-- Destination Card 6 -->
+                <a href="destination-detail.html?id=indonesia" class="destination-card" data-category="asia" data-name="Indonesia" data-tours="18">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" alt="Indonesia">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Bali</span>
+                        <h3 class="destination-name">Indonesia</h3>
+                        <span class="destination-tours">18 Tours</span>
+                    </div>
+                </a>
+
+                <!-- Destination Card 7 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Myanmar" data-tours="16">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1580577725314-6f72a08da1af?w=600&h=400&fit=crop" alt="Myanmar">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Bagan</span>
+                        <h3 class="destination-name">Myanmar</h3>
+                        <span class="destination-tours">16 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 8 -->
+                <div class="destination-card hidden-card" data-category="america" data-name="Peru" data-tours="28">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=600&h=400&fit=crop" alt="Peru">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Machu Picchu</span>
+                        <h3 class="destination-name">Peru</h3>
+                        <span class="destination-tours">28 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 9 -->
+                <div class="destination-card hidden-card" data-category="oceania" data-name="New Zealand" data-tours="22">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&h=400&fit=crop" alt="New Zealand">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Auckland</span>
+                        <h3 class="destination-name">New Zealand</h3>
+                        <span class="destination-tours">22 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 10 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Greece" data-tours="30">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1503152394-c571994fd383?w=600&h=400&fit=crop" alt="Greece">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Santorini</span>
+                        <h3 class="destination-name">Greece</h3>
+                        <span class="destination-tours">30 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 11 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Italy" data-tours="35">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&h=400&fit=crop" alt="Italy">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Rome</span>
+                        <h3 class="destination-name">Italy</h3>
+                        <span class="destination-tours">35 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 12 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="France" data-tours="38">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop" alt="France">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Paris</span>
+                        <h3 class="destination-name">France</h3>
+                        <span class="destination-tours">38 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 13 -->
+                <div class="destination-card hidden-card" data-category="africa" data-name="Egypt" data-tours="26">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=600&h=400&fit=crop" alt="Egypt">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Cairo</span>
+                        <h3 class="destination-name">Egypt</h3>
+                        <span class="destination-tours">26 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 14 -->
+                <div class="destination-card hidden-card" data-category="africa" data-name="Morocco" data-tours="20">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=600&h=400&fit=crop" alt="Morocco">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Marrakech</span>
+                        <h3 class="destination-name">Morocco</h3>
+                        <span class="destination-tours">20 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 15 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Maldives" data-tours="19">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop" alt="Maldives">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Malé</span>
+                        <h3 class="destination-name">Maldives</h3>
+                        <span class="destination-tours">19 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 16 -->
+                <div class="destination-card hidden-card" data-category="america" data-name="Brazil" data-tours="27">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&h=400&fit=crop" alt="Brazil">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Rio de Janeiro</span>
+                        <h3 class="destination-name">Brazil</h3>
+                        <span class="destination-tours">27 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 17 -->
+                <div class="destination-card hidden-card" data-category="oceania" data-name="Australia" data-tours="33">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&h=400&fit=crop" alt="Australia">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Sydney</span>
+                        <h3 class="destination-name">Australia</h3>
+                        <span class="destination-tours">33 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 18 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Vietnam" data-tours="23">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=600&h=400&fit=crop" alt="Vietnam">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Hanoi</span>
+                        <h3 class="destination-name">Vietnam</h3>
+                        <span class="destination-tours">23 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 19 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Spain" data-tours="31">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=600&h=400&fit=crop" alt="Spain">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Barcelona</span>
+                        <h3 class="destination-name">Spain</h3>
+                        <span class="destination-tours">31 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 20 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Sri Lanka" data-tours="17">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Sri Lanka">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Colombo</span>
+                        <h3 class="destination-name">Sri Lanka</h3>
+                        <span class="destination-tours">17 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 21 -->
+                <div class="destination-card hidden-card" data-category="africa" data-name="Kenya" data-tours="21">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop" alt="Kenya">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Nairobi</span>
+                        <h3 class="destination-name">Kenya</h3>
+                        <span class="destination-tours">21 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 22 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Switzerland" data-tours="29">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&h=400&fit=crop" alt="Switzerland">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Zurich</span>
+                        <h3 class="destination-name">Switzerland</h3>
+                        <span class="destination-tours">29 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 23 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Nepal" data-tours="25">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?w=600&h=400&fit=crop" alt="Nepal">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Kathmandu</span>
+                        <h3 class="destination-name">Nepal</h3>
+                        <span class="destination-tours">25 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 24 -->
+                <div class="destination-card hidden-card" data-category="america" data-name="Canada" data-tours="34">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=600&h=400&fit=crop" alt="Canada">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Vancouver</span>
+                        <h3 class="destination-name">Canada</h3>
+                        <span class="destination-tours">34 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 25 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="China" data-tours="40">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=600&h=400&fit=crop" alt="China">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Beijing</span>
+                        <h3 class="destination-name">China</h3>
+                        <span class="destination-tours">40 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 26 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="South Korea" data-tours="26">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&h=400&fit=crop" alt="South Korea">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Seoul</span>
+                        <h3 class="destination-name">South Korea</h3>
+                        <span class="destination-tours">26 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 27 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Netherlands" data-tours="22">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&h=400&fit=crop" alt="Netherlands">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Amsterdam</span>
+                        <h3 class="destination-name">Netherlands</h3>
+                        <span class="destination-tours">22 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 28 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Germany" data-tours="30">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&h=400&fit=crop" alt="Germany">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Berlin</span>
+                        <h3 class="destination-name">Germany</h3>
+                        <span class="destination-tours">30 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 29 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Portugal" data-tours="24">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&h=400&fit=crop" alt="Portugal">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Lisbon</span>
+                        <h3 class="destination-name">Portugal</h3>
+                        <span class="destination-tours">24 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 30 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="India" data-tours="36">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=400&fit=crop" alt="India">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Agra</span>
+                        <h3 class="destination-name">India</h3>
+                        <span class="destination-tours">36 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 31 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Singapore" data-tours="20">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&h=400&fit=crop" alt="Singapore">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Marina Bay</span>
+                        <h3 class="destination-name">Singapore</h3>
+                        <span class="destination-tours">20 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 32 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Malaysia" data-tours="22">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&h=400&fit=crop" alt="Malaysia">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Kuala Lumpur</span>
+                        <h3 class="destination-name">Malaysia</h3>
+                        <span class="destination-tours">22 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 33 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Austria" data-tours="21">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=600&h=400&fit=crop" alt="Austria">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Vienna</span>
+                        <h3 class="destination-name">Austria</h3>
+                        <span class="destination-tours">21 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 34 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Iceland" data-tours="18">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=600&h=400&fit=crop" alt="Iceland">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Reykjavik</span>
+                        <h3 class="destination-name">Iceland</h3>
+                        <span class="destination-tours">18 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 35 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Norway" data-tours="23">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=600&h=400&fit=crop" alt="Norway">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Oslo</span>
+                        <h3 class="destination-name">Norway</h3>
+                        <span class="destination-tours">23 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 36 -->
+                <div class="destination-card hidden-card" data-category="america" data-name="Mexico" data-tours="28">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1518638150340-f706e86654de?w=600&h=400&fit=crop" alt="Mexico">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Cancun</span>
+                        <h3 class="destination-name">Mexico</h3>
+                        <span class="destination-tours">28 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 37 -->
+                <div class="destination-card hidden-card" data-category="america" data-name="Argentina" data-tours="25">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=600&h=400&fit=crop" alt="Argentina">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Buenos Aires</span>
+                        <h3 class="destination-name">Argentina</h3>
+                        <span class="destination-tours">25 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 38 -->
+                <div class="destination-card hidden-card" data-category="america" data-name="Chile" data-tours="20">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=600&h=400&fit=crop" alt="Chile">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Santiago</span>
+                        <h3 class="destination-name">Chile</h3>
+                        <span class="destination-tours">20 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 39 -->
+                <div class="destination-card hidden-card" data-category="africa" data-name="South Africa" data-tours="27">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1484318571209-661cf29a69c3?w=600&h=400&fit=crop" alt="South Africa">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Cape Town</span>
+                        <h3 class="destination-name">South Africa</h3>
+                        <span class="destination-tours">27 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 40 -->
+                <div class="destination-card hidden-card" data-category="africa" data-name="Tanzania" data-tours="19">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1568617294602-408b4469c4cd?w=600&h=400&fit=crop" alt="Tanzania">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Zanzibar</span>
+                        <h3 class="destination-name">Tanzania</h3>
+                        <span class="destination-tours">19 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 41 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="UAE" data-tours="32">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop" alt="UAE">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Dubai</span>
+                        <h3 class="destination-name">UAE</h3>
+                        <span class="destination-tours">32 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 42 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Jordan" data-tours="17">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1578895101408-1a36b834405b?w=600&h=400&fit=crop" alt="Jordan">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Petra</span>
+                        <h3 class="destination-name">Jordan</h3>
+                        <span class="destination-tours">17 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 43 -->
+                <div class="destination-card hidden-card" data-category="oceania" data-name="Fiji" data-tours="16">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="Fiji">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Nadi</span>
+                        <h3 class="destination-name">Fiji</h3>
+                        <span class="destination-tours">16 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 44 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Cambodia" data-tours="21">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1570366583862-f91883984fde?w=600&h=400&fit=crop" alt="Cambodia">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Angkor Wat</span>
+                        <h3 class="destination-name">Cambodia</h3>
+                        <span class="destination-tours">21 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 45 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Czech Republic" data-tours="24">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1541849546-216549ae216d?w=600&h=400&fit=crop" alt="Czech Republic">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Prague</span>
+                        <h3 class="destination-name">Czech Republic</h3>
+                        <span class="destination-tours">24 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 46 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Croatia" data-tours="22">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1555990793-da11153b2473?w=600&h=400&fit=crop" alt="Croatia">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Dubrovnik</span>
+                        <h3 class="destination-name">Croatia</h3>
+                        <span class="destination-tours">22 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 47 -->
+                <div class="destination-card hidden-card" data-category="asia" data-name="Philippines" data-tours="25">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?w=600&h=400&fit=crop" alt="Philippines">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Palawan</span>
+                        <h3 class="destination-name">Philippines</h3>
+                        <span class="destination-tours">25 Tours</span>
+                    </div>
+                </div>
+
+                <!-- Destination Card 48 -->
+                <div class="destination-card hidden-card" data-category="europe" data-name="Turkey" data-tours="33">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&h=400&fit=crop" alt="Turkey">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Istanbul</span>
+                        <h3 class="destination-name">Turkey</h3>
+                        <span class="destination-tours">33 Tours</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- See More Button -->
+            <div class="see-more-container" id="seeMoreContainer">
+                <button class="see-more-btn" id="seeMoreBtn">
+                    <span class="btn-text">See More Destinations</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No Destinations Found</h3>
+                <p>Try adjusting your search or filter to find what you're looking for.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Promo Section -->
+    <section class="video-promo-section">
+        <div class="video-promo-overlay"></div>
+        <div class="video-promo-content">
+            <p class="video-promo-subtitle">Love Where You're Going</p>
+            <h2 class="video-promo-title">Explore Your Life, <span class="highlight-yellow">Travel Where You Want!</span></h2>
+            <p class="video-promo-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            
+            <button class="video-play-btn" id="videoPlayBtn">
+                <div class="play-btn-ring"></div>
+                <div class="play-btn-circle">
+                    <i class="fas fa-play"></i>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay" id="videoModalOverlay"></div>
+        <div class="video-modal-content">
+            <button class="video-modal-close" id="videoModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-wrapper">
+                <iframe id="videoIframe" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Instagram Gallery -->
+        <div class="instagram-gallery">
+            <div class="instagram-images">
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=300&h=300&fit=crop" alt="Instagram 1">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687221038-404cb8830901?w=300&h=300&fit=crop" alt="Instagram 2">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=300&h=300&fit=crop" alt="Instagram 3">
+                </div>
+                <div class="instagram-item instagram-follow">
+                    <div class="instagram-follow-content">
+                        <i class="fab fa-instagram"></i>
+                        <p>@ Follow On Instagram</p>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220199-d0124f48f95b?w=300&h=300&fit=crop" alt="Instagram 4">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220147-a52e42f54b6c?w=300&h=300&fit=crop" alt="Instagram 5">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687221080-5cb261c645cb?w=300&h=300&fit=crop" alt="Instagram 6">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714?w=300&h=300&fit=crop" alt="Instagram 7">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+            <div class="footer-container">
+                <!-- Company Info -->
+                <div class="footer-column footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-compass"></i>
+                        <span>TRAVELIN</span>
+                    </div>
+                    <p class="footer-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque iaculis molestie sagittis maecenas aenean eget molestie sagittis.
+                    </p>
+                    <div class="footer-contact">
+                        <p><strong>PO Box:</strong> +47-252-254-2542</p>
+                        <p><strong>Location:</strong> Collins Street, sydney, Australia</p>
+                        <p><strong>Email:</strong> info@Travelin.com</p>
+                        <p><strong>Website:</strong> www.Travelin.com</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Link</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="newsletter-text">
+                        Jin our community of over 200,000 global readers who receives emails filled with news, promotions, and other good stuff.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-left">
+                    <p class="payment-text">We Support:</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-discover"></i>
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="footer-bottom-right">
+                    <select class="footer-select">
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                    </select>
+                    <select class="footer-select">
+                        <option>$ USD</option>
+                        <option>€ EUR</option>
+                        <option>£ GBP</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <div class="footer-copyright-container">
+                <p>2022 Travelin. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

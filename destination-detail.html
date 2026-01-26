@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details - TRAVELIN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span class="top-bar-item">
+                    <i class="fas fa-calendar-alt"></i> Thursday, Mar 26, 2021
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-map-marker-alt"></i> Hollywood, America
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-clock"></i> Mon-Fri: 10 AM - 5 PM
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-compass"></i>
+                <span>Ceylonova Tours</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="destinations.html" class="nav-link">DESTINATIONS</a>
+                <a href="#" class="nav-link" style="display: none;">TOURS</a>
+                <a href="#" class="nav-link" style="display: none;">PAGES</a>
+                <a href="#" class="nav-link" style="display: none;">BLOG</a>
+            </nav>
+
+            <div class="nav-right">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="#" class="login-btn"><i class="fas fa-user"></i> LOGIN/REGISTER</a>
+                <a href="#" class="book-now-btn">BOOK NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header detail-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1 class="page-header-title" id="destTitle">Loading...</h1>
+            <div class="page-header-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">|</span>
+                <a href="destinations.html">Destinations</a>
+                <span class="breadcrumb-separator">|</span>
+                <span id="destBreadcrumb">Details</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Details Section -->
+    <section class="destination-detail-section">
+        <div class="detail-container">
+            <!-- Main Content -->
+            <div class="detail-main">
+                <!-- Image Gallery -->
+                <div class="detail-gallery">
+                    <div class="gallery-main">
+                        <img id="mainImage" src="" alt="">
+                    </div>
+                    <div class="gallery-thumbs" id="galleryThumbs">
+                        <!-- Thumbnails will be loaded by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Destination Info -->
+                <div class="detail-info">
+                    <div class="detail-header">
+                        <div class="detail-title-section">
+                            <h2 id="destName" class="detail-name">Destination Name</h2>
+                            <div class="detail-meta">
+                                <span class="detail-location"><i class="fas fa-map-marker-alt"></i> <span id="destLocation">Location</span></span>
+                                <span class="detail-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span id="destRating">4.8</span> (245 Reviews)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="detail-price">
+                            <span class="price-label">Starting from</span>
+                            <span class="price-amount" id="destPrice">$999</span>
+                            <span class="price-per">per person</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="detail-description">
+                        <h3>About This Destination</h3>
+                        <p id="destDescription">
+                            Loading destination description...
+                        </p>
+                    </div>
+
+                    <!-- Highlights -->
+                    <div class="detail-highlights">
+                        <h3>Tour Highlights</h3>
+                        <ul id="destHighlights" class="highlights-list">
+                            <!-- Will be loaded by JavaScript -->
+                        </ul>
+                    </div>
+
+                    <!-- Quick Info -->
+                    <div class="detail-quick-info">
+                        <div class="quick-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span class="info-label">Duration</span>
+                                <span class="info-value" id="destDuration">7 Days</span>
+                            </div>
+                        </div>
+                        <div class="quick-info-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <span class="info-label">Group Size</span>
+                                <span class="info-value" id="destGroup">Max 12</span>
+                            </div>
+                        </div>
+                        <div class="quick-info-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <span class="info-label">Languages</span>
+                                <span class="info-value" id="destLanguages">English, Spanish</span>
+                            </div>
+                        </div>
+                        <div class="quick-info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <span class="info-label">Available</span>
+                                <span class="info-value">Year Round</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Included/Excluded -->
+                    <div class="detail-included">
+                        <div class="included-col">
+                            <h3>What's Included</h3>
+                            <ul id="destIncluded" class="included-list">
+                                <!-- Will be loaded by JavaScript -->
+                            </ul>
+                        </div>
+                        <div class="included-col">
+                            <h3>What's Not Included</h3>
+                            <ul id="destExcluded" class="excluded-list">
+                                <!-- Will be loaded by JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="detail-sidebar">
+                <!-- Booking Form -->
+                <div class="booking-form-card">
+                    <h3 class="form-card-title">Book This Tour</h3>
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-phone"></i> Phone</label>
+                            <input type="tel" placeholder="+1 234 567 8900" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-calendar"></i> Travel Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-users"></i> Number of Travelers</label>
+                            <select required>
+                                <option value="">Select...</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-comment"></i> Special Requests</label>
+                            <textarea rows="3" placeholder="Any special requirements?"></textarea>
+                        </div>
+                        <button type="submit" class="booking-submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Inquiry
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Card -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Need Help?</h4>
+                    <p>Contact our travel experts</p>
+                    <a href="tel:+1234567890" class="contact-phone">
+                        <i class="fas fa-phone-alt"></i> +1 234 567 8900
+                    </a>
+                    <a href="mailto:info@travelin.com" class="contact-email">
+                        <i class="fas fa-envelope"></i> info@travelin.com
+                    </a>
+                </div>
+
+                <!-- Related Tours -->
+                <div class="related-tours-card">
+                    <h3>Popular Tours</h3>
+                    <div class="related-tour-item">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=100&h=100&fit=crop" alt="Tour">
+                        <div class="related-tour-info">
+                            <h5>Tokyo City Tour</h5>
+                            <p><i class="fas fa-clock"></i> 5 Days</p>
+                            <span class="related-tour-price">$899</span>
+                        </div>
+                    </div>
+                    <div class="related-tour-item">
+                        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=100&h=100&fit=crop" alt="Tour">
+                        <div class="related-tour-info">
+                            <h5>Bangkok Adventure</h5>
+                            <p><i class="fas fa-clock"></i> 6 Days</p>
+                            <span class="related-tour-price">$799</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Instagram Gallery -->
+        <div class="instagram-gallery">
+            <div class="instagram-images">
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=300&h=300&fit=crop" alt="Instagram 1">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687221038-404cb8830901?w=300&h=300&fit=crop" alt="Instagram 2">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=300&h=300&fit=crop" alt="Instagram 3">
+                </div>
+                <div class="instagram-item instagram-follow">
+                    <div class="instagram-follow-content">
+                        <i class="fab fa-instagram"></i>
+                        <p>@ Follow On Instagram</p>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220199-d0124f48f95b?w=300&h=300&fit=crop" alt="Instagram 4">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220147-a52e42f54b6c?w=300&h=300&fit=crop" alt="Instagram 5">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687221080-5cb261c645cb?w=300&h=300&fit=crop" alt="Instagram 6">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714?w=300&h=300&fit=crop" alt="Instagram 7">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+            <div class="footer-container">
+                <!-- Company Info -->
+                <div class="footer-column footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-compass"></i>
+                        <span>TRAVELIN</span>
+                    </div>
+                    <p class="footer-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque iaculis molestie sagittis maecenas aenean eget molestie sagittis.
+                    </p>
+                    <div class="footer-contact">
+                        <p><strong>PO Box:</strong> +47-252-254-2542</p>
+                        <p><strong>Location:</strong> Collins Street, sydney, Australia</p>
+                        <p><strong>Email:</strong> info@Travelin.com</p>
+                        <p><strong>Website:</strong> www.Travelin.com</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Link</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="newsletter-text">
+                        Jin our community of over 200,000 global readers who receives emails filled with news, promotions, and other good stuff.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-left">
+                    <p class="payment-text">We Support:</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-discover"></i>
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="footer-bottom-right">
+                    <select class="footer-select">
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                    </select>
+                    <select class="footer-select">
+                        <option>$ USD</option>
+                        <option>€ EUR</option>
+                        <option>£ GBP</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <div class="footer-copyright-container">
+                <p>2022 Travelin. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="destinations-data.js"></script>
+    <script src="destination-detail.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
