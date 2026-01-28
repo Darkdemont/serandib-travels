@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Ceylonova Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@700;900&family=Yaldevi:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span class="top-bar-item">
+                    <i class="fas fa-calendar-alt"></i> Thursday, Mar 26, 2021
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-map-marker-alt"></i> Hollywood, America
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-clock"></i> Mon-Fri: 10 AM - 5 PM
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-compass"></i>
+                <span>Ceylonova Tours</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="destinations.html" class="nav-link">DESTINATIONS</a>
+                <a href="gallery.html" class="nav-link active">GALLERY</a>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+            </nav>
+
+            <div class="nav-right">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="#" class="login-btn"><i class="fas fa-user"></i> LOGIN/REGISTER</a>
+                <a href="#" class="book-now-btn">BOOK NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header gallery-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1 class="page-header-title">PHOTO GALLERY</h1>
+            <div class="page-header-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">|</span>
+                <span>Gallery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <!-- Section Header -->
+            <div class="gallery-intro">
+                <p class="gallery-subtitle">Our Collection</p>
+                <h2 class="gallery-title">Explore Sri Lanka <span class="highlight-text">Through Images</span></h2>
+                <p class="gallery-description">
+                    Discover the breathtaking beauty of Sri Lanka through our curated photo collection showcasing stunning landscapes, ancient heritage sites, and unforgettable moments.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="gallery-filter-btn active" data-filter="all">
+                    <i class="fas fa-globe"></i> All Photos
+                </button>
+                <button class="gallery-filter-btn" data-filter="culture">
+                    <i class="fas fa-landmark"></i> Culture & Heritage
+                </button>
+                <button class="gallery-filter-btn" data-filter="nature">
+                    <i class="fas fa-mountain"></i> Nature & Landscapes
+                </button>
+                <button class="gallery-filter-btn" data-filter="beaches">
+                    <i class="fas fa-umbrella-beach"></i> Beaches
+                </button>
+                <button class="gallery-filter-btn" data-filter="wildlife">
+                    <i class="fas fa-paw"></i> Wildlife
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Culture & Heritage Images -->
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=600&fit=crop" alt="Sigiriya Rock Fortress">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Sigiriya Rock Fortress</h3>
+                            <p>Ancient Wonder</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(0)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600&h=600&fit=crop" alt="Temple of the Tooth">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Temple of the Tooth</h3>
+                            <p>Sacred Temple - Kandy</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(1)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=600&h=600&fit=crop" alt="Ancient City">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Ancient City</h3>
+                            <p>Polonnaruwa Ruins</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(2)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Nature & Landscapes -->
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=600&h=600&fit=crop" alt="Tea Plantations">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Tea Plantations</h3>
+                            <p>Nuwara Eliya Hill Country</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(3)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1586492885419-1cf0c2c7ac06?w=600&h=600&fit=crop" alt="Ella Nine Arch Bridge">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Nine Arch Bridge</h3>
+                            <p>Ella</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(4)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1543716091-a840c05249ec?w=600&h=600&fit=crop" alt="Waterfall">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Ravana Waterfall</h3>
+                            <p>Natural Beauty</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(5)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Beaches -->
+                <div class="gallery-item" data-category="beaches">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=600&fit=crop" alt="Beach Paradise">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Bentota Beach</h3>
+                            <p>Tropical Paradise</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(6)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beaches">
+                    <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=600&h=600&fit=crop" alt="Coastal View">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Mirissa Beach</h3>
+                            <p>Sunset Coast</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(7)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beaches">
+                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=600&h=600&fit=crop" alt="Palm Trees">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Coconut Paradise</h3>
+                            <p>Tropical Beaches</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(8)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wildlife -->
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&h=600&fit=crop" alt="Elephant Safari">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Wild Elephants</h3>
+                            <p>Yala National Park</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(9)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1588954404937-c4e17f9b7c1f?w=600&h=600&fit=crop" alt="Leopard">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Sri Lankan Leopard</h3>
+                            <p>Wildlife Safari</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(10)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=600&fit=crop" alt="Scenic Vista">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Mountain Vista</h3>
+                            <p>Adam's Peak</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox(11)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <button class="lightbox-prev" onclick="changeImage(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="lightbox-next" onclick="changeImage(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Instagram Gallery -->
+        <div class="instagram-gallery">
+            <div class="instagram-images">
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=300&h=300&fit=crop" alt="Instagram 1">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687221038-404cb8830901?w=300&h=300&fit=crop" alt="Instagram 2">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=300&h=300&fit=crop" alt="Instagram 3">
+                </div>
+                <div class="instagram-item instagram-follow">
+                    <div class="instagram-follow-content">
+                        <i class="fab fa-instagram"></i>
+                        <p>@ Follow On Instagram</p>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220199-d0124f48f95b?w=300&h=300&fit=crop" alt="Instagram 4">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687220147-a52e42f54b6c?w=300&h=300&fit=crop" alt="Instagram 5">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687221080-5cb261c645cb?w=300&h=300&fit=crop" alt="Instagram 6">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714?w=300&h=300&fit=crop" alt="Instagram 7">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+            <div class="footer-container">
+                <!-- Company Info -->
+                <div class="footer-column footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-compass"></i>
+                        <span>TRAVELIN</span>
+                    </div>
+                    <p class="footer-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque iaculis molestie sagittis maecenas aenean eget molestie sagittis.
+                    </p>
+                    <div class="footer-contact">
+                        <p><strong>PO Box:</strong> +47-252-254-2542</p>
+                        <p><strong>Location:</strong> Collins Street, sydney, Australia</p>
+                        <p><strong>Email:</strong> info@Travelin.com</p>
+                        <p><strong>Website:</strong> www.Travelin.com</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Link</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="newsletter-text">
+                        Jin our community of over 200,000 global readers who receives emails filled with news, promotions, and other good stuff.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-left">
+                    <p class="payment-text">We Support:</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-discover"></i>
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="footer-bottom-right">
+                    <select class="footer-select">
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                    </select>
+                    <select class="footer-select">
+                        <option>$ USD</option>
+                        <option>€ EUR</option>
+                        <option>£ GBP</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <div class="footer-copyright-container">
+                <p>2022 Travelin. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery filtering
+        const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Filter gallery items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.style.opacity = '1', 10);
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => item.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+
+        // Lightbox functionality
+        let currentImageIndex = 0;
+        const images = [
+            {src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=800&fit=crop', caption: 'Sigiriya Rock Fortress - Ancient Wonder'},
+            {src: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&h=800&fit=crop', caption: 'Temple of the Tooth - Sacred Temple, Kandy'},
+            {src: 'https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=1200&h=800&fit=crop', caption: 'Ancient City - Polonnaruwa Ruins'},
+            {src: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=1200&h=800&fit=crop', caption: 'Tea Plantations - Nuwara Eliya Hill Country'},
+            {src: 'https://images.unsplash.com/photo-1586492885419-1cf0c2c7ac06?w=1200&h=800&fit=crop', caption: 'Nine Arch Bridge - Ella'},
+            {src: 'https://images.unsplash.com/photo-1543716091-a840c05249ec?w=1200&h=800&fit=crop', caption: 'Ravana Waterfall - Natural Beauty'},
+            {src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=800&fit=crop', caption: 'Bentota Beach - Tropical Paradise'},
+            {src: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1200&h=800&fit=crop', caption: 'Mirissa Beach - Sunset Coast'},
+            {src: 'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=1200&h=800&fit=crop', caption: 'Coconut Paradise - Tropical Beaches'},
+            {src: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1200&h=800&fit=crop', caption: 'Wild Elephants - Yala National Park'},
+            {src: 'https://images.unsplash.com/photo-1588954404937-c4e17f9b7c1f?w=1200&h=800&fit=crop', caption: 'Sri Lankan Leopard - Wildlife Safari'},
+            {src: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200&h=800&fit=crop', caption: 'Mountain Vista - Adam\'s Peak'}
+        ];
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+            
+            img.src = images[index].src;
+            caption.textContent = images[index].caption;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = images.length - 1;
+            if (currentImageIndex >= images.length) currentImageIndex = 0;
+            
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+            img.src = images[currentImageIndex].src;
+            caption.textContent = images[currentImageIndex].caption;
+        }
+
+        // Close lightbox on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'ArrowRight') changeImage(1);
+        });
+
+        // Close lightbox when clicking outside image
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLightbox();
+        });
+    </script>
+</body>
+</html>

@@ -396,3 +396,262 @@ destinationsData['america'] = {
         'https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=800&h=600&fit=crop'
     ]
 };
+
+// New Sri Lankan Tour Packages
+destinationsData['grand-sri-lanka'] = {
+    name: 'Grand Sri Lanka Tour',
+    location: 'Anuradhapura to Colombo',
+    price: 850,
+    priceNote: '(without hotels)',
+    rating: 4.8,
+    reviews: 189,
+    duration: '10 Days / 9 Nights',
+    group: 'Private Tour',
+    languages: 'English',
+    availability: 'All year',
+    description: 'Comprehensive 10-day journey covering all major attractions from ancient kingdoms in the north to southern beaches. Experience Sri Lanka\'s complete cultural and natural heritage with visits to Anuradhapura, Sigiriya, Polonnaruwa, Kandy, hill country, wildlife safaris, and coastal gems.',
+    highlights: [
+        'Ancient kingdoms: Anuradhapura, Sigiriya, Polonnaruwa',
+        'Kandy Temple of the Tooth & cultural show',
+        'Hill country train route (Nuwara Eliya to Ella)',
+        'Optional Yala wildlife safari',
+        'Galle Fort & southern beaches',
+        'Colombo city tour'
+    ],
+    included: [
+        'Airport pickup & drop-off',
+        'Private air-conditioned vehicle',
+        'English-speaking driver/guide',
+        'All transfers as per itinerary',
+        'Fuel, parking & highway charges'
+    ],
+    excluded: [
+        'Hotel accommodation',
+        'Meals & beverages',
+        'Entrance tickets to attractions',
+        'Safari jeep fees',
+        'Train tickets',
+        'Personal expenses'
+    ],
+    images: [
+        'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1588954404937-c4e17f9b7c1f?w=800&h=600&fit=crop'
+    ]
+};
+
+destinationsData['honeymoon-sri-lanka'] = {
+    name: 'Honeymoon Tour Package',
+    location: 'Kandy → Nuwara Eliya → Bentota',
+    price: 680,
+    priceNote: '(without hotels)',
+    rating: 4.9,
+    reviews: 156,
+    duration: '4 Days / 3 Nights',
+    group: 'Private Tour for Couples',
+    languages: 'English',
+    availability: 'All year',
+    description: 'A romantic 4-day getaway designed for newlyweds. Experience the misty hill country romance, scenic tea plantations, breathtaking waterfalls, and pristine beaches. Includes luxury private vehicle, custom honeymoon itinerary, and optional candle light dinner arrangements.',
+    highlights: [
+        'Romantic hill country stays',
+        'Tea plantations & scenic viewpoints',
+        'Waterfalls & nature walks',
+        'Beach relaxation in Bentota',
+        'Candle light dinner (optional)',
+        'Private luxury vehicle & custom itinerary'
+    ],
+    included: [
+        'Airport pickup & drop-off',
+        'Luxury private air-conditioned vehicle',
+        'English-speaking driver',
+        'Romantic setup assistance',
+        'All transfers as per itinerary'
+    ],
+    excluded: [
+        'Hotels & meals',
+        'Entrance tickets',
+        'Candle light dinner (optional extra)',
+        'Spa treatments',
+        'Personal expenses'
+    ],
+    images: [
+        'https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop'
+    ]
+};
+
+destinationsData['ultimate-sri-lanka'] = {
+    name: 'Ultimate Sri Lanka Grand Tour',
+    location: 'Complete Island Experience',
+    price: 1150,
+    priceNote: '(without hotels)',
+    rating: 4.9,
+    reviews: 234,
+    duration: '14 Days / 13 Nights',
+    group: 'Private & Customizable',
+    languages: 'English',
+    availability: 'All year',
+    description: 'The complete Sri Lankan experience! Perfect for first-time visitors and nature + culture lovers. This comprehensive 14-day tour covers ancient cities, hill country, rainforests, wildlife safaris, pristine beaches, and modern Colombo. Fully private and customizable to your preferences.',
+    highlights: [
+        'Cultural Triangle: Anuradhapura, Sigiriya, Kandy',
+        'Hill country: Nuwara Eliya, Ella, Haputale',
+        'Yala National Park wildlife safari',
+        'Sinharaja Rainforest trek',
+        'Bentota beach & water sports',
+        'Colombo shopping & city tour'
+    ],
+    included: [
+        'Airport transfers',
+        'Private luxury vehicle',
+        'English-speaking driver/guide',
+        'All transportation as per itinerary',
+        'Flexible schedule'
+    ],
+    excluded: [
+        'Hotels',
+        'Meals',
+        'Entrance tickets',
+        'Safari & activity fees',
+        'Train tickets',
+        'Personal expenses'
+    ],
+    images: [
+        'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1588954404937-c4e17f9b7c1f?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop'
+    ]
+};
+
+destinationsData['beach-vacation-sri-lanka'] = {
+    name: 'Beach Vacation Tour',
+    location: 'Bentota → Mirissa',
+    price: 450,
+    priceNote: '(without hotels)',
+    rating: 4.7,
+    reviews: 142,
+    duration: '5 Days / 4 Nights',
+    group: 'Private Tour',
+    languages: 'English',
+    availability: 'All year (whale watching seasonal)',
+    description: 'Relax and unwind on Sri Lanka\'s stunning southern coastline. Perfect beach vacation with Bentota river safari, historic Galle Fort exploration, seasonal whale watching in Mirissa, and plenty of time to soak up the sun on pristine beaches.',
+    highlights: [
+        'Bentota beach & river safari',
+        'Galle Fort UNESCO site',
+        'Whale watching in Mirissa (seasonal)',
+        'Beach hopping along the south coast',
+        'Water sports & relaxation',
+        'Fresh seafood dining'
+    ],
+    included: [
+        'Airport pickup & drop-off',
+        'Private air-conditioned vehicle',
+        'English-speaking driver',
+        'Coastal sightseeing',
+        'All transfers'
+    ],
+    excluded: [
+        'Hotels',
+        'Meals',
+        'Whale watching tickets',
+        'Water sports fees',
+        'Entrance to Galle Fort sites',
+        'Personal expenses'
+    ],
+    images: [
+        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop'
+    ]
+};
+
+destinationsData['hill-country-escape'] = {
+    name: 'Hill Country Escape',
+    location: 'Kandy → Mandaramnuwara → Nuwara Eliya → Ella → Haputale',
+    price: 520,
+    priceNote: '(without hotels)',
+    rating: 4.8,
+    reviews: 167,
+    duration: '5 Days / 4 Nights',
+    group: 'Private Tour',
+    languages: 'English',
+    availability: 'All year',
+    description: 'Escape to the cool misty mountains of Sri Lanka\'s hill country. Explore lush tea estates, cascading waterfalls, scenic viewpoints, and charming mountain villages. Experience the famous scenic train ride and breathtaking landscapes.',
+    highlights: [
+        'Tea estates & factory tours',
+        'Waterfalls: Ramboda, Ravana, Diyaluma',
+        'Scenic viewpoints: World\'s End, Ella Rock',
+        'Cool climate mountain villages',
+        'Scenic train ride (optional)',
+        'Colonial architecture & gardens'
+    ],
+    included: [
+        'Airport pickup & drop-off',
+        'Private air-conditioned vehicle',
+        'English-speaking driver',
+        'Scenic mountain drives',
+        'All transfers'
+    ],
+    excluded: [
+        'Hotels',
+        'Meals',
+        'Train tickets',
+        'Entrance fees',
+        'Trekking guides',
+        'Personal expenses'
+    ],
+    images: [
+        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1586492885419-1cf0c2c7ac06?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1543716091-a840c05249ec?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop'
+    ]
+};
+
+destinationsData['highlights-tour-sri-lanka'] = {
+    name: 'Sri Lanka Highlights Tour',
+    location: 'Anuradhapura to Colombo via East Coast',
+    price: 590,
+    priceNote: '(without hotels)',
+    rating: 4.7,
+    reviews: 178,
+    duration: '7 Days / 6 Nights',
+    group: 'Private Tour',
+    languages: 'English',
+    availability: 'All year',
+    description: 'Experience Sri Lanka\'s best highlights in one week! Cultural triangle ancient sites, pristine east coast beaches, hill country tea estates, optional white water rafting adventure in Kitulgala, and modern Colombo city tour.',
+    highlights: [
+        'Cultural Triangle: Anuradhapura, Sigiriya',
+        'Trincomalee east coast beaches',
+        'Kandy cultural capital',
+        'Nuwara Eliya tea country',
+        'White water rafting in Kitulgala (optional)',
+        'Colombo city & shopping tour'
+    ],
+    included: [
+        'Airport pickup & drop-off',
+        'Private air-conditioned vehicle',
+        'English-speaking driver/guide',
+        'All transfers as per itinerary',
+        'Flexible schedule'
+    ],
+    excluded: [
+        'Hotels & accommodation',
+        'Meals & beverages',
+        'Entrance tickets',
+        'Rafting fees (optional)',
+        'Beach activities',
+        'Personal expenses'
+    ],
+    images: [
+        'https://images.unsplash.com/photo-1588442686675-d8c3d14f27e6?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop'
+    ]
+};
+
