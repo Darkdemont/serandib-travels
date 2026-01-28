@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     
     steps:
     - name: Checkout code
@@ -20,8 +21,13 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /public_html/
+        timeout: 300000
         exclude: |
           **/.git*
           **/.git*/**
           **/node_modules/**
+          **/images-optimized/**
           .github/**
+          optimize-images.js
+          package.json
+          package-lock.json
