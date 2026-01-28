@@ -655,3 +655,88 @@ destinationsData['highlights-tour-sri-lanka'] = {
     ]
 };
 
+destinationsData['sri-lanka-explorer'] = {
+    name: 'Sri Lanka Explorer Tour',
+    location: 'Colombo to Cultural Triangle',
+    price: 350,
+    priceNote: '(without hotels)',
+    rating: 4.6,
+    reviews: 45,
+    duration: '4 Days / 3 Nights',
+    group: 'Private Tour',
+    languages: 'English',
+    availability: 'All year',
+    description: 'Experience the best of Sri Lanka in 4 days - ancient temples, scenic hills, and vibrant culture. Perfect for first-time visitors wanting to see the highlights.',
+    highlights: [
+        'Sigiriya Rock Fortress',
+        'Ancient city of Polonnaruwa',
+        'Temple of the Tooth - Kandy',
+        'Royal Botanical Gardens',
+        'Traditional cultural show',
+        'Scenic mountain views'
+    ],
+    included: [
+        'Airport pickup & drop-off',
+        'Private air-conditioned vehicle',
+        'English-speaking driver/guide',
+        'All transfers as per itinerary',
+        'Bottled water daily'
+    ],
+    excluded: [
+        'Hotels & accommodation',
+        'Meals & beverages',
+        'Entrance tickets',
+        'Cultural show tickets',
+        'Personal expenses'
+    ],
+    images: [
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop'
+    ]
+};
+
+destinationsData['classic-sri-lanka'] = {
+    name: 'Classic Sri Lanka Tour',
+    location: 'Colombo to South Coast',
+    price: 520,
+    priceNote: '(without hotels)',
+    rating: 4.8,
+    reviews: 62,
+    duration: '6 Days / 5 Nights',
+    group: 'Private Tour',
+    languages: 'English',
+    availability: 'All year',
+    description: 'Discover Sigiriya Rock, Kandy Temple, tea plantations, and stunning beaches in 6 magical days. The perfect blend of culture, nature, and relaxation.',
+    highlights: [
+        'Sigiriya Rock Fortress & frescoes',
+        'Dambulla Cave Temple',
+        'Temple of the Tooth - Kandy',
+        'Nuwara Eliya tea plantations',
+        'Scenic train ride through hills',
+        'South coast beaches - Bentota/Mirissa'
+    ],
+    included: [
+        'Airport pickup & drop-off',
+        'Private air-conditioned vehicle',
+        'English-speaking driver/guide',
+        'All transfers as per itinerary',
+        'Train tickets for scenic route',
+        'Bottled water daily'
+    ],
+    excluded: [
+        'Hotels & accommodation',
+        'Meals & beverages',
+        'Entrance tickets',
+        'Beach activities',
+        'Personal expenses'
+    ],
+    images: [
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1586492885419-1cf0c2c7ac06?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop'
+    ]
+};
+
