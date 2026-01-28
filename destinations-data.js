@@ -34,10 +34,10 @@ const destinationsData = {
             'Personal expenses'
         ],
         images: [
-            'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1588954404937-c4e17f9b7c1f?w=800&h=600&fit=crop'
+            'images/sigiriya.png',
+            'images/polonnaru.png',
+            'images/galle.png',
+            'images/ella.png'
         ]
     },
     'classic-sri-lanka': {
@@ -71,10 +71,10 @@ const destinationsData = {
             'Train tickets & meals'
         ],
         images: [
-            'https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop'
+            'images/galle.png',
+            'images/ClassicSriLanka.png',
+            'images/sigiriya.png',
+            'images/polonnaru.png'
         ]
     },
     'cultural-beach-sri-lanka': {
@@ -107,10 +107,10 @@ const destinationsData = {
             'Safari, train tickets & meals'
         ],
         images: [
-            'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=800&h=600&fit=crop'
+            'images/ClassicSriLanka.png',
+            'images/sigiriya.png',
+            'images/polonnaru.png',
+            'images/galle.png'
         ]
     },
     'japan': {
@@ -187,7 +187,7 @@ const destinationsData = {
             'Spa treatments'
         ],
         images: [
-            'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop',
+            'images/wes.png',
             'https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&h=600&fit=crop',
             'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&h=600&fit=crop',
             'https://images.unsplash.com/photo-1506665531195-80942b4a8401?w=800&h=600&fit=crop'
@@ -338,7 +338,7 @@ destinationsData['caspian-valley'] = {
     images: [
         'https://images.unsplash.com/photo-1541696443271-cd4137c4d921?w=800&h=600&fit=crop',
         'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&h=600&fit=crop',
+        'images/B1.png',
         'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&h=600&fit=crop'
     ]
 };
@@ -434,10 +434,10 @@ destinationsData['grand-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1588954404937-c4e17f9b7c1f?w=800&h=600&fit=crop'
+        'images/wes.png',
+        'images/sigiriya.png',
+        'images/polonnaru.png',
+        'images/ella.png'
     ]
 };
 
@@ -476,10 +476,10 @@ destinationsData['honeymoon-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop'
+        'images/B1.png',
+        'images/polonnaru.png',
+        'images/ella.png',
+        'images/sigiriya.png'
     ]
 };
 
@@ -519,10 +519,10 @@ destinationsData['ultimate-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1588954404937-c4e17f9b7c1f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop'
+        'images/w1.png',
+        'images/sigiriya.png',
+        'images/ella.png',
+        'images/polonnaru.png'
     ]
 };
 
@@ -562,10 +562,10 @@ destinationsData['beach-vacation-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop'
+        'images/ella.png',
+        'images/B1.png',
+        'images/galle.png',
+        'images/E1.png'
     ]
 };
 
@@ -605,10 +605,10 @@ destinationsData['hill-country-escape'] = {
         'Personal expenses'
     ],
     images: [
-        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1586492885419-1cf0c2c7ac06?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1543716091-a840c05249ec?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop'
+        'images/polonnaru.png',
+        'images/ella.png',
+        'images/B1.png',
+        'images/sigiriya.png'
     ]
 };
 
@@ -648,10 +648,10 @@ destinationsData['highlights-tour-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'https://images.unsplash.com/photo-1588442686675-d8c3d14f27e6?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop'
+        'images/B1.png',
+        'images/sigiriya.png',
+        'images/galle.png',
+        'images/polonnaru.png'
     ]
 };
 
@@ -690,10 +690,10 @@ destinationsData['sri-lanka-explorer'] = {
         'Personal expenses'
     ],
     images: [
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1552375846-8b2e118bd6e7?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop'
+        'images/sigiriya.png',
+        'images/ClassicSriLanka.png',
+        'images/galle.png',
+        'images/polonnaru.png'
     ]
 };
 
@@ -733,10 +733,10 @@ destinationsData['classic-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1586492885419-1cf0c2c7ac06?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop'
+        'images/sigiriya.png',
+        'images/polonnaru.png',
+        'images/galle.png',
+        'images/ella.png'
     ]
 };
 
