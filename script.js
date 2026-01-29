@@ -3,6 +3,34 @@ const heroSlides = document.querySelectorAll('.hero-slide');
 const prevBtn = document.getElementById('prevSlide');
 const nextBtn = document.getElementById('nextSlide');
 
+// Welcome Text Alternation
+const welcomeTexts = document.querySelectorAll('.hero-welcome-sinhala');
+let isEnglish = false;
+
+function toggleWelcomeText() {
+    welcomeTexts.forEach(text => {
+        // Fade out
+        text.style.opacity = '0';
+        
+        setTimeout(() => {
+            // Change text
+            if (isEnglish) {
+                text.textContent = 'ආයුබෝවන්!';
+            } else {
+                text.textContent = 'Ayubowan!';
+            }
+            // Fade in
+            text.style.opacity = '1';
+        }, 500);
+    });
+    isEnglish = !isEnglish;
+}
+
+// Alternate welcome text every 3 seconds
+if (welcomeTexts.length > 0) {
+    setInterval(toggleWelcomeText, 3000);
+}
+
 let currentSlide = 0;
 
 function showSlide(index) {
