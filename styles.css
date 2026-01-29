@@ -3346,6 +3346,9 @@ img {
 
 /* Results Info */
 .results-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -3357,6 +3360,41 @@ img {
 .results-info span {
     color: #14b8a6;
     font-weight: 700;
+}
+
+/* View Toggle Buttons */
+.view-toggle {
+    display: flex;
+    gap: 10px;
+    background-color: #f1f5f9;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.view-toggle-btn {
+    padding: 10px 16px;
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-toggle-btn:hover {
+    color: #14b8a6;
+    background-color: #e0f2fe;
+}
+
+.view-toggle-btn.active {
+    background-color: #14b8a6;
+    color: white;
 }
 
 /* Destinations Grid */
@@ -3400,6 +3438,53 @@ img {
     transition: transform 0.5s ease;
 }
 
+/* Image Slider Styles */
+.destination-image-slider {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 3;
+}
+
+.slider-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider-dots .dot.active {
+    background-color: #14b8a6;
+    width: 24px;
+    border-radius: 4px;
+}
+
 .destination-card:hover .destination-image img {
     transform: scale(1.1);
 }
@@ -3420,6 +3505,7 @@ img {
     right: 0;
     padding: 25px;
     z-index: 2;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.95) 40%);
 }
 
 .destination-region {
@@ -3433,21 +3519,65 @@ img {
 }
 
 .destination-name {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    line-height: 1.3;
 }
 
 .destination-tours {
     display: inline-block;
-    padding: 8px 20px;
+    padding: 6px 16px;
     background-color: #14b8a6;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     border-radius: 50px;
     transition: all 0.3s ease;
+    margin-bottom: 12px;
+}
+
+/* Destination Highlights */
+.destination-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+    display: none;
+}
+
+.destination-highlights li {
+    color: #e2e8f0;
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.4;
+}
+
+.destination-highlights i {
+    color: #14b8a6;
+    font-size: 11px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.destination-card:hover .destination-highlights {
+    display: block;
+}
+
+/* Destination Price */
+.destination-price {
+    color: #fbbf24;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    display: none;
+}
+
+.destination-card:hover .destination-price {
+    display: block;
 }
 
 .destination-card:hover .destination-tours {
@@ -3463,6 +3593,82 @@ img {
 .destination-card.filter-hidden {
     display: none !important;
     opacity: 0;
+}
+
+/* LIST VIEW STYLES */
+.destinations-grid.list-view {
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.destinations-grid.list-view .destination-card {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    height: 280px;
+    border-radius: 16px;
+}
+
+.destinations-grid.list-view .destination-image-slider,
+.destinations-grid.list-view .destination-image {
+    height: 100%;
+    border-radius: 0;
+}
+
+.destinations-grid.list-view .destination-content {
+    position: static;
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destinations-grid.list-view .destination-region {
+    color: #14b8a6;
+}
+
+.destinations-grid.list-view .destination-name {
+    font-size: 24px;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.destinations-grid.list-view .destination-tours {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    margin-bottom: 15px;
+}
+
+.destinations-grid.list-view .destination-highlights {
+    display: block;
+    margin: 0;
+}
+
+.destinations-grid.list-view .destination-highlights li {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.destinations-grid.list-view .destination-price {
+    display: block;
+    color: #14b8a6;
+    font-size: 22px;
+    margin-top: auto;
+}
+
+.destinations-grid.list-view .featured-badge {
+    top: 20px;
+    left: 20px;
+}
+
+.destinations-grid.list-view .slider-dots {
+    left: 20px;
+    transform: none;
+}
+
+.destinations-grid.list-view .destination-overlay {
+    background: none;
 }
 
 /* See More Button */
@@ -3584,7 +3790,8 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .destination-image {
+    .destination-image,
+    .destination-image-slider {
         height: 300px;
     }
 
@@ -3595,6 +3802,41 @@ img {
     .filter-btn {
         font-size: 13px;
         padding: 10px 16px;
+    }
+
+    /* List view mobile responsive */
+    .destinations-grid.list-view .destination-card {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .destinations-grid.list-view .destination-image-slider,
+    .destinations-grid.list-view .destination-image {
+        height: 250px;
+    }
+
+    .destinations-grid.list-view .destination-content {
+        padding: 20px;
+    }
+
+    .destinations-grid.list-view .destination-name {
+        font-size: 20px;
+    }
+
+    .destinations-grid.list-view .destination-price {
+        font-size: 18px;
+    }
+
+    /* View toggle responsive */
+    .results-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .view-toggle {
+        width: 100%;
+        justify-content: center;
     }
 }
 

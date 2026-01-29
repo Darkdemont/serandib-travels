@@ -123,127 +123,254 @@
             <!-- Results Count -->
             <div class="results-info">
                 <p>Showing <span id="resultCount">9</span> destinations</p>
+                
+                <!-- View Toggle Buttons -->
+                <div class="view-toggle">
+                    <button class="view-toggle-btn active" data-view="grid" title="Grid View">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-toggle-btn" data-view="list" title="List View">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
             </div>
 
             <!-- Destinations Grid -->
             <div class="destinations-grid" id="destinationsGrid">
                 <!-- Destination Card - Sri Lanka Explorer Tour -->
                 <a href="destination-detail.html?id=sri-lanka-explorer" class="destination-card" data-category="cultural" data-name="Sri Lanka Explorer Tour" data-tours="1">
-                    <div class="destination-image">
-                        <img src="images/sigiriya.png" alt="Sri Lanka">
+                    <div class="destination-image-slider">
+                        <img src="images/sigiriya.png" alt="Sri Lanka" class="slider-image active">
+                        <img src="images/polonnaru.png" alt="Sri Lanka" class="slider-image">
+                        <img src="images/galle.png" alt="Sri Lanka" class="slider-image">
                         <div class="destination-overlay"></div>
                         <span class="featured-badge">⭐ Featured</span>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                     <div class="destination-content">
                         <span class="destination-region">Sri Lanka</span>
                         <h3 class="destination-name">Sri Lanka Explorer Tour</h3>
                         <span class="destination-tours">4 Days / 3 Nights</span>
+                        <ul class="destination-highlights">
+                            <li><i class="fas fa-check"></i> Sigiriya Rock Fortress & Dambulla Cave</li>
+                            <li><i class="fas fa-check"></i> Sacred Temple of the Tooth - Kandy</li>
+                            <li><i class="fas fa-check"></i> Relaxing beach stay in Bentota</li>
+                        </ul>
+                        <div class="destination-price">From $400</div>
                     </div>
                 </a>
 
                 <!-- Destination Card - Classic Sri Lanka Tour -->
                 <a href="destination-detail.html?id=classic-sri-lanka" class="destination-card" data-category="cultural" data-name="Classic Sri Lanka Tour" data-tours="1">
-                    <div class="destination-image">
-                        <img src="images/polonnaru.png" alt="Sri Lanka">
+                    <div class="destination-image-slider">
+                        <img src="images/galle.png" alt="Sri Lanka" class="slider-image active">
+                        <img src="images/ClassicSriLanka.png" alt="Sri Lanka" class="slider-image">
+                        <img src="images/sigiriya.png" alt="Sri Lanka" class="slider-image">
                         <div class="destination-overlay"></div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                     <div class="destination-content">
                         <span class="destination-region">Sri Lanka</span>
                         <h3 class="destination-name">Classic Sri Lanka Tour</h3>
                         <span class="destination-tours">6 Days / 5 Nights</span>
+                        <ul class="destination-highlights">
+                            <li><i class="fas fa-check"></i> Kandy cultural capital visit</li>
+                            <li><i class="fas fa-check"></i> Nuwara Eliya tea country experience</li>
+                            <li><i class="fas fa-check"></i> Galle Fort & southern beaches</li>
+                        </ul>
+                        <div class="destination-price">From $700</div>
                     </div>
                 </a>
 
                 <!-- Destination Card - Sri Lanka Cultural & Beach Tour -->
                 <a href="destination-detail.html?id=cultural-beach-sri-lanka" class="destination-card" data-category="beach" data-name="Sri Lanka Cultural & Beach Tour" data-tours="1">
-                    <div class="destination-image">
-                        <img src="images/kandy1.png" alt="Sri Lanka">
+                    <div class="destination-image-slider">
+                        <img src="images/kandy1.png" alt="Sri Lanka" class="slider-image active">
+                        <img src="images/ella.png" alt="Sri Lanka" class="slider-image">
+                        <img src="images/B1.png" alt="Sri Lanka" class="slider-image">
                         <div class="destination-overlay"></div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                     <div class="destination-content">
                         <span class="destination-region">Sri Lanka</span>
                         <h3 class="destination-name">Sri Lanka Cultural & Beach Tour</h3>
                         <span class="destination-tours">7 Days / 6 Nights</span>
+                        <ul class="destination-highlights">
+                            <li><i class="fas fa-check"></i> Hill Country & Ella viewpoints</li>
+                            <li><i class="fas fa-check"></i> Optional Yala Safari experience</li>
+                            <li><i class="fas fa-check"></i> Bentota beach relaxation</li>
+                        </ul>
+                        <div class="destination-price">Price on request</div>
                     </div>
                 </a>
 
                 <!-- Destination Card - Grand Sri Lanka Tour -->
                 <a href="destination-detail.html?id=grand-sri-lanka" class="destination-card" data-category="cultural" data-name="Grand Sri Lanka Tour" data-tours="1">
-                    <div class="destination-image">
-                        <img src="images/galle.png" alt="Grand Sri Lanka Tour">
+                    <div class="destination-image-slider">
+                        <img src="images/galle.png" alt="Grand Sri Lanka Tour" class="slider-image active">
+                        <img src="images/sigiriya.png" alt="Grand Sri Lanka Tour" class="slider-image">
+                        <img src="images/wes.png" alt="Grand Sri Lanka Tour" class="slider-image">
                         <div class="destination-overlay"></div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                     <div class="destination-content">
                         <span class="destination-region">Sri Lanka</span>
                         <h3 class="destination-name">Grand Sri Lanka Tour</h3>
                         <span class="destination-tours">10 Days / 9 Nights</span>
+                        <ul class="destination-highlights">
+                            <li><i class="fas fa-check"></i> Complete island exploration</li>
+                            <li><i class="fas fa-check"></i> UNESCO heritage sites tour</li>
+                            <li><i class="fas fa-check"></i> Wildlife safari & tea plantations</li>
+                        </ul>
+                        <div class="destination-price">From $1,200</div>
                     </div>
                 </a>
 
                 <!-- Destination Card - Honeymoon Tour Package -->
                 <a href="destination-detail.html?id=honeymoon-sri-lanka" class="destination-card" data-category="beach" data-name="Honeymoon Tour Package" data-tours="1">
-                    <div class="destination-image">
-                        <img src="images/HM.png" alt="Honeymoon Sri Lanka">
+                    <div class="destination-image-slider">
+                        <img src="images/HM.png" alt="Honeymoon Sri Lanka" class="slider-image active">
+                        <img src="images/HoneymoonEscape.png" alt="Honeymoon Sri Lanka" class="slider-image">
+                        <img src="images/B1.png" alt="Honeymoon Sri Lanka" class="slider-image">
                         <div class="destination-overlay"></div>
                         <span class="featured-badge">💕 Romantic</span>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                     <div class="destination-content">
                         <span class="destination-region">Sri Lanka</span>
                         <h3 class="destination-name">Honeymoon Tour Package</h3>
                         <span class="destination-tours">4 Days / 3 Nights</span>
+                        <ul class="destination-highlights">
+                            <li><i class="fas fa-check"></i> Romantic beach resort stays</li>
+                            <li><i class="fas fa-check"></i> Candlelit dinners & spa treatments</li>
+                            <li><i class="fas fa-check"></i> Scenic train journey experience</li>
+                        </ul>
+                        <div class="destination-price">From $450</div>
                     </div>
                 </a>
 
                 <!-- Destination Card - Ultimate Sri Lanka Grand Tour -->
                 <a href="destination-detail.html?id=ultimate-sri-lanka" class="destination-card" data-category="cultural" data-name="Ultimate Sri Lanka Grand Tour" data-tours="1">
-                    <div class="destination-image">
-                        <img src="images/wes.png" alt="Ultimate Sri Lanka Grand Tour">
+                    <div class="destination-image-slider">
+                        <img src="images/wes.png" alt="Ultimate Sri Lanka Grand Tour" class="slider-image active">
+                        <img src="images/SriLankaExplorer.png" alt="Ultimate Sri Lanka Grand Tour" class="slider-image">
+                        <img src="images/SriLankaHighlights.png" alt="Ultimate Sri Lanka Grand Tour" class="slider-image">
                         <div class="destination-overlay"></div>
                         <span class="featured-badge">⭐ Best Value</span>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                     <div class="destination-content">
                         <span class="destination-region">Sri Lanka</span>
                         <h3 class="destination-name">Ultimate Sri Lanka Grand Tour</h3>
                         <span class="destination-tours">14 Days / 13 Nights</span>
+                        <ul class="destination-highlights">
+                            <li><i class="fas fa-check"></i> All major attractions covered</li>
+                            <li><i class="fas fa-check"></i> Cultural, wildlife & beach experiences</li>
+                            <li><i class="fas fa-check"></i> Private guide throughout journey</li>
+                        </ul>
+                        <div class="destination-price">From $1,800</div>
                     </div>
                 </a>
 
                 <!-- Destination Card - Beach Vacation Tour -->
                 <a href="destination-detail.html?id=beach-vacation-sri-lanka" class="destination-card" data-category="beach" data-name="Beach Vacation Tour" data-tours="1">
-                    <div class="destination-image">
-                        <img src="images/B1.png" alt="Ultimate Sri Lanka Grand Tour">
+                    <div class="destination-image-slider">
+                        <img src="images/B1.png" alt="Beach Vacation Tour" class="slider-image active">
+                        <img src="images/HM.png" alt="Beach Vacation Tour" class="slider-image">
+                        <img src="images/galle.png" alt="Beach Vacation Tour" class="slider-image">
                         <div class="destination-overlay"></div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                     <div class="destination-content">
                         <span class="destination-region">Sri Lanka</span>
                         <h3 class="destination-name">Beach Vacation Tour</h3>
                         <span class="destination-tours">5 Days / 4 Nights</span>
+                        <ul class="destination-highlights">
+                            <li><i class="fas fa-check"></i> Pristine southern beaches</li>
+                            <li><i class="fas fa-check"></i> Water sports & snorkeling</li>
+                            <li><i class="fas fa-check"></i> Galle Fort exploration</li>
+                        </ul>
+                        <div class="destination-price">From $550</div>
                     </div>
                 </a>
 
                 <!-- Destination Card - Hill Country Escape -->
                 <a href="destination-detail.html?id=hill-country-escape" class="destination-card" data-category="hillcountry" data-name="Hill Country Escape" data-tours="1">
-                    <div class="destination-image">
-                        <img src="images/E1.png" alt="Ultimate Sri Lanka Grand Tour">
+                    <div class="destination-image-slider">
+                        <img src="images/E1.png" alt="Hill Country Escape" class="slider-image active">
+                        <img src="images/ella.png" alt="Hill Country Escape" class="slider-image">
+                        <img src="images/kandy1.png" alt="Hill Country Escape" class="slider-image">
                         <div class="destination-overlay"></div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                     <div class="destination-content">
                         <span class="destination-region">Sri Lanka</span>
                         <h3 class="destination-name">Hill Country Escape</h3>
                         <span class="destination-tours">5 Days / 4 Nights</span>
+                        <ul class="destination-highlights">
+                            <li><i class="fas fa-check"></i> Tea plantations & factory tours</li>
+                            <li><i class="fas fa-check"></i> Nine Arch Bridge & Little Adam's Peak</li>
+                            <li><i class="fas fa-check"></i> Scenic train journey to Ella</li>
+                        </ul>
+                        <div class="destination-price">From $600</div>
                     </div>
                 </a>
 
                 <!-- Destination Card - Sri Lanka Highlights Tour -->
                 <a href="destination-detail.html?id=highlights-tour-sri-lanka" class="destination-card" data-category="cultural" data-name="Sri Lanka Highlights Tour" data-tours="1">
-                    <div class="destination-image">
-                        <img src="images/w1.png" alt="Ultimate Sri Lanka Grand Tour">
+                    <div class="destination-image-slider">
+                        <img src="images/w1.png" alt="Highlights Tour" class="slider-image active">
+                        <img src="images/SriLankaHighlights.png" alt="Highlights Tour" class="slider-image">
+                        <img src="images/sigiriya.png" alt="Highlights Tour" class="slider-image">
                         <div class="destination-overlay"></div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                     <div class="destination-content">
                         <span class="destination-region">Sri Lanka</span>
                         <h3 class="destination-name">Sri Lanka Highlights Tour</h3>
                         <span class="destination-tours">7 Days / 6 Nights</span>
+                        <ul class="destination-highlights">
+                            <li><i class="fas fa-check"></i> Key UNESCO world heritage sites</li>
+                            <li><i class="fas fa-check"></i> Cultural shows & local cuisine</li>
+                            <li><i class="fas fa-check"></i> Elephant orphanage visit</li>
+                        </ul>
+                        <div class="destination-price">From $850</div>
                     </div>
                 </a>
 

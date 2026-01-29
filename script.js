@@ -520,3 +520,94 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// ===== DESTINATION PAGE ENHANCEMENTS =====
+
+// View Toggle (Grid / List View)
+document.addEventListener('DOMContentLoaded', function() {
+    const viewToggleBtns = document.querySelectorAll('.view-toggle-btn');
+    const destinationsGrid = document.getElementById('destinationsGrid');
+
+    if (viewToggleBtns.length > 0 && destinationsGrid) {
+        viewToggleBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const view = this.getAttribute('data-view');
+                
+                // Update active button
+                viewToggleBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Toggle view
+                if (view === 'list') {
+                    destinationsGrid.classList.add('list-view');
+                } else {
+                    destinationsGrid.classList.remove('list-view');
+                }
+            });
+        });
+    }
+});
+
+// Image Carousel for Destination Cards
+document.addEventListener('DOMContentLoaded', function() {
+    const destinationCards = document.querySelectorAll('.destination-card');
+    
+    destinationCards.forEach(card => {
+        const slider = card.querySelector('.destination-image-slider');
+        if (!slider) return;
+        
+        const images = slider.querySelectorAll('.slider-image');
+        const dots = slider.querySelectorAll('.dot');
+        
+        if (images.length <= 1) return;
+        
+        let currentImageIndex = 0;
+        let intervalId;
+        
+        function showImage(index) {
+            // Hide all images
+            images.forEach(img => img.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show current image
+            images[index].classList.add('active');
+            if (dots[index]) {
+                dots[index].classList.add('active');
+            }
+        }
+        
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+        
+        function startAutoSlide() {
+            intervalId = setInterval(nextImage, 3000); // Change every 3 seconds
+        }
+        
+        function stopAutoSlide() {
+            if (intervalId) {
+                clearInterval(intervalId);
+            }
+        }
+        
+        // Start auto-sliding
+        startAutoSlide();
+        
+        // Pause on hover
+        card.addEventListener('mouseenter', stopAutoSlide);
+        card.addEventListener('mouseleave', startAutoSlide);
+        
+        // Click on dots to change image
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                currentImageIndex = index;
+                showImage(currentImageIndex);
+                stopAutoSlide();
+                startAutoSlide();
+            });
+        });
+    });
+});
