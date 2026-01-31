@@ -3486,6 +3486,9 @@ img {
     position: relative;
     height: 350px;
     overflow: hidden;
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .slider-image {
@@ -3497,6 +3500,8 @@ img {
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
 }
 
 .slider-image.active {
@@ -3539,6 +3544,8 @@ img {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .destination-content {
@@ -3897,20 +3904,20 @@ img {
     .destinations-grid {
         grid-template-columns: 1fr;
     }
+    
+    .destination-card {
+        border-radius: 12px;
+        overflow: hidden;
+    }
 
     .destination-image,
     .destination-image-slider {
         height: 300px;
+        border-radius: 0;
+        overflow: hidden;
     }
     
-    /* Lighter overlay on mobile for better visibility */
-    .destination-overlay {
-        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
-    }
     
-    .destination-content {
-        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.75) 40%);
-    }
 
     .destination-name {
         font-size: 24px;
