@@ -681,3 +681,44 @@ if (typeof window !== 'undefined') {
         }
     }
 }
+
+// Mobile: Tap to show package details (simulates hover effect)
+if (typeof window !== 'undefined' && 'ontouchstart' in window) {
+    const packageCards = document.querySelectorAll('.package-card');
+    
+    packageCards.forEach(card => {
+        let tapTimeout;
+        let isTapHold = false;
+        
+        card.addEventListener('touchstart', (e) => {
+            isTapHold = true;
+            
+            // Clear any existing timeout
+            clearTimeout(tapTimeout);
+            
+            // Add show-details class immediately
+            card.classList.add('show-details');
+        });
+        
+        card.addEventListener('touchmove', () => {
+            // If user is scrolling, remove the effect
+            isTapHold = false;
+            card.classList.remove('show-details');
+        });
+        
+        card.addEventListener('touchend', (e) => {
+            if (isTapHold) {
+                // Keep showing details for 2 seconds, then allow navigation
+                tapTimeout = setTimeout(() => {
+                    card.classList.remove('show-details');
+                }, 2000);
+            }
+        });
+        
+        // Clean up on touch cancel
+        card.addEventListener('touchcancel', () => {
+            card.classList.remove('show-details');
+            clearTimeout(tapTimeout);
+        });
+    });
+}
