@@ -689,7 +689,8 @@ img {
     }
 
     .destination-card {
-        height: 250px;
+        height: 280px;
+        min-height: 280px;
     }
 
     .destinations-title {
@@ -698,6 +699,17 @@ img {
 
     .destination-name {
         font-size: 22px;
+    }
+    
+    .destination-content {
+        bottom: 15px;
+        left: 15px;
+    }
+    
+    .tour-badge,
+    .featured-badge {
+        padding: 6px 12px;
+        font-size: 11px;
     }
 }
 
@@ -5962,6 +5974,30 @@ img {
 }
 
 @media (max-width: 480px) {
+    /* Destinations Page Mobile */
+    .destination-card {
+        height: 250px;
+        min-height: 250px;
+        margin-bottom: 10px;
+    }
+    
+    .destination-name {
+        font-size: 20px;
+    }
+    
+    .destination-country {
+        font-size: 12px;
+    }
+    
+    .destination-content {
+        bottom: 12px;
+        left: 12px;
+    }
+    
+    .destinations-grid {
+        gap: 12px;
+    }
+    
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;

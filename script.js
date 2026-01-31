@@ -639,3 +639,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Auto-scroll Top Categories on Mobile
+if (typeof window !== 'undefined') {
+    const categoriesSlider = document.querySelector('.categories-slider');
+    
+    if (categoriesSlider) {
+        let scrollAmount = 0;
+        let scrollDirection = 1;
+        let isAutoScrolling = true;
+        
+        function autoScroll() {
+            if (!isAutoScrolling) return;
+            
+            const maxScroll = categoriesSlider.scrollWidth - categoriesSlider.clientWidth;
+            
+            if (scrollAmount >= maxScroll) {
+                scrollDirection = -1;
+            } else if (scrollAmount <= 0) {
+                scrollDirection = 1;
+            }
+            
+            scrollAmount += scrollDirection * 1;
+            categoriesSlider.scrollLeft = scrollAmount;
+        }
+        
+        // Auto-scroll only on mobile devices
+        if (window.innerWidth <= 768) {
+            const autoScrollInterval = setInterval(autoScroll, 30);
+            
+            // Pause auto-scroll when user interacts
+            categoriesSlider.addEventListener('touchstart', () => {
+                isAutoScrolling = false;
+            });
+            
+            categoriesSlider.addEventListener('touchend', () => {
+                setTimeout(() => {
+                    isAutoScrolling = true;
+                }, 3000);
+            });
+        }
+    }
+}
