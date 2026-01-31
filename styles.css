@@ -1059,11 +1059,19 @@ img {
 
     .package-card {
         min-width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    
+    .package-image {
+        border-radius: 0;
+        overflow: hidden;
     }
     
     /* Lighter overlay on mobile */
     .package-image::before {
         background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 100%);
+        border-radius: 0;
     }
 
     .packages-title {
