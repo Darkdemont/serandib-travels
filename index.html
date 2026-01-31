@@ -386,31 +386,31 @@
                     <h3>Top<br>Categories</h3>
                 </div>
                 <div class="categories-slider">
-                    <a href="destinations.html" class="category-item">
+                    <a href="#" class="category-item" onclick="openPackageModal('beach'); return false;">
                         <i class="fas fa-umbrella-beach"></i>
                         <p>Beach Tours</p>
                     </a>
-                    <a href="destinations.html" class="category-item">
+                    <a href="#" class="category-item" onclick="openPackageModal('surfing'); return false;">
                         <i class="fas fa-person-swimming"></i>
                         <p>Surfing</p>
                     </a>
-                    <a href="destinations.html" class="category-item">
+                    <a href="#" class="category-item" onclick="openPackageModal('safari'); return false;">
                         <i class="fas fa-binoculars"></i>
                         <p>Safari</p>
                     </a>
-                    <a href="destinations.html" class="category-item">
+                    <a href="#" class="category-item" onclick="openPackageModal('cycling'); return false;">
                         <i class="fas fa-bicycle"></i>
                         <p>Cycling</p>
                     </a>
-                    <a href="destinations.html" class="category-item">
+                    <a href="#" class="category-item" onclick="openPackageModal('trekking'); return false;">
                         <i class="fas fa-person-hiking"></i>
                         <p>Trekings</p>
                     </a>
-                    <a href="destinations.html" class="category-item">
+                    <a href="#" class="category-item" onclick="openPackageModal('camping'); return false;">
                         <i class="fas fa-campground"></i>
                         <p>Camping</p>
                     </a>
-                    <a href="destinations.html" class="category-item">
+                    <a href="#" class="category-item" onclick="openPackageModal('hiking'); return false;">
                         <i class="fas fa-mountain"></i>
                         <p>Hiking</p>
                     </a>
@@ -860,6 +860,17 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- Package Modal -->
+    <div id="packageModal" class="package-modal">
+        <div class="package-modal-content">
+            <span class="package-modal-close" onclick="closePackageModal()">&times;</span>
+            <div id="packageModalBody">
+                <!-- Package details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="package-modal.js"></script>
 </body>
 </html>
