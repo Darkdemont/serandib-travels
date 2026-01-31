@@ -3891,6 +3891,15 @@ img {
     .destination-image-slider {
         height: 300px;
     }
+    
+    /* Lighter overlay on mobile for better visibility */
+    .destination-overlay {
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    }
+    
+    .destination-content {
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.75) 40%);
+    }
 
     .destination-name {
         font-size: 24px;
@@ -5998,6 +6007,15 @@ img {
         margin-bottom: 10px;
     }
     
+    /* Very light overlay for small mobile screens */
+    .destination-overlay {
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+    
+    .destination-content {
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 40%);
+    }
+    
     .destination-name {
         font-size: 20px;
     }
@@ -6227,7 +6245,16 @@ img {
     
     /* Lighter overlay for mobile package cards */
     .package-image::before {
-        background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 100%);
+        background: linear-gradient(to bottom, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.2) 100%) !important;
+    }
+    
+    /* Lighter overlays for destination cards on touch devices */
+    .destination-overlay {
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.35) 100%) !important;
+    }
+    
+    .destination-content {
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 40%) !important;
     }
     
     /* Make package cards tappable to show details */
