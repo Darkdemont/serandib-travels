@@ -1,4 +1,6 @@
 // Destination Detail Page JavaScript
+let currentDestination = null;
+
 document.addEventListener('DOMContentLoaded', function() {
     // Get destination ID from URL
     const urlParams = new URLSearchParams(window.location.search);
@@ -16,7 +18,40 @@ document.addEventListener('DOMContentLoaded', function() {
     if (bookingForm) {
         bookingForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your inquiry! We will contact you shortly.');
+            
+            // Get form data
+            const fullName = bookingForm.querySelector('[name="fullName"]').value;
+            const email = bookingForm.querySelector('[name="email"]').value;
+            const travelDate = bookingForm.querySelector('[name="travelDate"]').value;
+            const travelers = bookingForm.querySelector('[name="travelers"]').value;
+            const specialRequests = bookingForm.querySelector('[name="specialRequests"]').value;
+            
+            // Create WhatsApp message with package details
+            let message = `🎯 *New Tour Inquiry*\n\n`;
+            message += `📦 *Package:* ${currentDestination.name}\n`;
+            message += `📍 *Location:* ${currentDestination.location}\n`;
+            message += `⏱️ *Duration:* ${currentDestination.duration}\n`;
+            message += `💰 *Price:* $${currentDestination.price}${currentDestination.priceNote ? ' ' + currentDestination.priceNote : ''}\n\n`;
+            message += `👤 *Customer Details:*\n`;
+            message += `Name: ${fullName}\n`;
+            message += `Email: ${email}\n`;
+            message += `Travel Date: ${travelDate}\n`;
+            message += `Number of Travelers: ${travelers}\n`;
+            if (specialRequests) {
+                message += `\n📝 *Special Requests:*\n${specialRequests}`;
+            }
+            
+            // Replace with your WhatsApp number (include country code without + or spaces)
+            // Example: For +94 771234567, use 94771234567
+            const whatsappNumber = '94707096220'; // Ceylonova Tours WhatsApp
+            
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+            
+            // Reset form
             bookingForm.reset();
         });
     }
@@ -24,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function loadDestinationDetails(destId) {
     const dest = destinationsData[destId];
+    currentDestination = dest; // Store for booking form
     
     // Update page title
     document.title = `${dest.name} - TRAVELIN`;
@@ -37,12 +73,12 @@ function loadDestinationDetails(destId) {
     document.getElementById('destLocation').textContent = dest.location;
     document.getElementById('destRating').textContent = dest.rating;
     
-    // Update reviews count if available
+    // Update rating display
     const ratingElement = document.querySelector('.detail-rating');
-    if (dest.reviews && ratingElement) {
+    if (ratingElement) {
         const reviewText = ratingElement.querySelector('span:last-child');
         if (reviewText) {
-            reviewText.textContent = `${dest.rating} (${dest.reviews} Reviews)`;
+            reviewText.textContent = dest.rating;
         }
     }
     
@@ -68,7 +104,9 @@ function loadDestinationDetails(destId) {
         pricePerElement.textContent = 'per person';
     }
     
-    document.getElementById('destDescription').textContent = dest.description;
+    document.getElementById('destDescription').innerHTML = dest.fullDescription ? 
+        dest.fullDescription.split('\n\n').map(para => `<p>${para}</p>`).join('') : 
+        dest.description;
     document.getElementById('destDuration').textContent = dest.duration;
     document.getElementById('destGroup').textContent = dest.group;
     document.getElementById('destLanguages').textContent = dest.languages;
@@ -113,7 +151,23 @@ function loadDestinationDetails(destId) {
     highlightsList.innerHTML = '';
     dest.highlights.forEach(highlight => {
         const li = document.createElement('li');
-        li.innerHTML = `<i class="fas fa-check-circle"></i> ${highlight}`;
+        
+        // Check if highlight is an object with title and description
+        if (typeof highlight === 'object' && highlight.title) {
+            li.innerHTML = `
+                <div class="highlight-item">
+                    <div class="highlight-title">
+                        <i class="fas fa-check-circle"></i> 
+                        <strong>${highlight.title}</strong>
+                    </div>
+                    <div class="highlight-description">${highlight.description}</div>
+                </div>
+            `;
+        } else {
+            // Simple string highlight (backward compatibility)
+            li.innerHTML = `<i class="fas fa-check-circle"></i> ${highlight}`;
+        }
+        
         highlightsList.appendChild(li);
     });
     

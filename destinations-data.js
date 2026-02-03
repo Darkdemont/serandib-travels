@@ -11,18 +11,37 @@ const destinationsData = {
         group: 'Private (1-4 people)',
         languages: 'English',
         availability: 'Available all year',
-        description: 'Experience the best of Sri Lanka in just 4 days! This private tour takes you through ancient UNESCO heritage sites, scenic hill capital Kandy, and the relaxing southern beaches of Bentota. Perfect for travelers who want culture, nature, and beach time in one smooth journey.',
+        description: 'This tour is a perfect introduction to Sri Lanka, combining the island\'s ancient heritage, cultural richness, and tropical beach relaxation in one well-balanced journey. Designed around three of Sri Lanka\'s most iconic destinations — Sigiriya Rock Fortress, Kandy, and Bentota — this experience offers travelers a diverse and unforgettable glimpse into the heart of the island.',
         highlights: [
-            'Sigiriya Rock Fortress & Dambulla Cave Temple (UNESCO Sites)',
-            'Sacred Temple of the Tooth Relic – Kandy',
-            'Scenic cultural city tour & spice gardens',
-            'Relaxing beach stay in Bentota',
-            'Private vehicle with local driver-guide'
+            {
+                title: 'Sigiriya Rock Fortress',
+                description: 'The journey begins in the Cultural Triangle with Sigiriya, home to the world-famous Sigiriya Rock Fortress, a UNESCO World Heritage Site and one of Asia\'s most remarkable ancient monuments. Rising dramatically above the surrounding plains, Sigiriya showcases extraordinary ancient engineering, royal gardens, frescoes, and breathtaking panoramic views from the summit. Visitors can also enjoy nearby viewpoints and optional village experiences that reveal the authentic rural lifestyle of Sri Lanka.'
+            },
+            {
+                title: 'Ancient city of Polonnaruwa',
+                description: 'Explore the magnificent ruins of Polonnaruwa, Sri Lanka\'s medieval capital and another UNESCO World Heritage Site. This ancient city features remarkably preserved stone sculptures, royal palaces, and sacred temples that tell the story of a once-thriving kingdom. Cycle through the archaeological park to witness the famous Gal Vihara rock sculptures, the Royal Palace complex, and beautiful lotus ponds that transport you back to the golden age of Sinhalese civilization.'
+            },
+            {
+                title: 'Temple of the Tooth - Kandy',
+                description: 'The tour then continues to Kandy, the cultural capital and last royal kingdom of Sri Lanka. Nestled among lush hills and centered around a scenic lake, Kandy offers a calm yet deeply spiritual atmosphere. The city is home to the sacred Temple of the Tooth Relic, one of the most important Buddhist pilgrimage sites in the world. Cultural performances, traditional architecture, and vibrant local life provide visitors with a meaningful insight into Sri Lanka\'s living heritage and traditions.'
+            },
+            {
+                title: 'Royal Botanical Gardens',
+                description: 'Visit the stunning Royal Botanical Gardens in Peradeniya, just outside Kandy. Spanning 147 acres along the Mahaweli River, these gardens showcase an incredible collection of over 4,000 plant species from around the world. Stroll through avenues lined with towering royal palms, discover rare orchids in the Orchid House, and relax beneath the famous giant Javan fig tree. The gardens offer a peaceful retreat and a perfect opportunity to appreciate Sri Lanka\'s rich botanical heritage.'
+            },
+            {
+                title: 'Traditional cultural show',
+                description: 'Experience the vibrant spirit of Sri Lankan culture through a traditional Kandyan dance performance. Watch skilled dancers perform ancient rituals and folk tales through elaborate costumes, rhythmic drumming, and acrobatic movements. The show culminates with the spectacular fire-walking ceremony, where performers walk barefoot across burning coals. This cultural evening provides an authentic glimpse into centuries-old traditions that continue to thrive in modern Sri Lanka.'
+            },
+            {
+                title: 'Scenic mountain views & Beach Relaxation',
+                description: 'The final stage of the journey takes you to the sun-kissed southern coast, where Bentota welcomes travelers with golden sandy beaches, warm turquoise waters, and a relaxed coastal charm. After days of cultural exploration, Bentota is the ideal destination to unwind, enjoy beachside leisure, and experience Sri Lanka\'s tropical beauty. Guests can relax by the ocean, enjoy peaceful sunsets, or explore nearby coastal attractions at their own pace. Carefully paced and thoughtfully designed, this tour is ideal for first-time visitors and travelers seeking a short yet comprehensive Sri Lankan experience. With a perfect blend of history, culture, scenery, and relaxation, this journey delivers the true essence of Sri Lanka in just a few unforgettable days.'
+            }
         ],
         included: [
             'Airport pickup & drop-off',
             'Private air-conditioned vehicle',
-            'English-speaking driver / guide',
+            'English-speaking driver',
             'Fuel, parking & highway charges',
             'All transfers as per itinerary'
         ],
@@ -36,8 +55,8 @@ const destinationsData = {
         images: [
             'images/sigiriya.png',
             'images/polonnaru.png',
-            'images/galle.png',
-            'images/ella.png'
+            'images/kandy1.png',
+            'images/B1.png'
         ]
     },
     'classic-sri-lanka': {
@@ -51,13 +70,28 @@ const destinationsData = {
         group: 'Private Tour',
         languages: 'English',
         availability: 'All year',
-        description: 'A perfectly balanced Sri Lanka itinerary covering ancient ruins, misty hill towns, scenic train rides, and stunning beaches—ideal for travelers who want "everything".',
+        description: 'Experience the true essence of Sri Lanka on this unforgettable journey that takes you from ancient cultural landmarks to misty hill country and finally to the golden beaches of the south coast. The Classic Sri Lanka Tour is thoughtfully designed for travelers who wish to explore history, culture, nature, wildlife, and relaxation in one perfectly balanced itinerary. This tour covers Sri Lanka\'s most iconic destinations including Sigiriya, Kandy, Ella, Tissamaharama, and Bentota, offering a rich and diverse travel experience.',
         highlights: [
-            'Sigiriya Rock & Dambulla Cave Temple',
-            'Kandy cultural capital',
-            'Nuwara Eliya tea country',
-            'Ella scenic train journey',
-            'Galle Fort & southern beaches'
+            {
+                title: 'Sigiriya Rock & Dambulla Cave Temple',
+                description: 'Sigiriya Rock Fortress is one of Sri Lanka\'s most iconic landmarks and a UNESCO World Heritage Site. Rising nearly 200 meters above the surrounding plains, this ancient citadel is a masterpiece of engineering and art. Visitors can explore the famous Lion\'s Paws, beautifully preserved frescoes, the mirror wall inscriptions, and the landscaped royal gardens. The panoramic view from the summit is truly breathtaking and one of the highlights of the tour.'
+            },
+            {
+                title: 'Kandy – Cultural Capital of Sri Lanka',
+                description: 'Nestled among lush hills, Kandy is the cultural heart of Sri Lanka and home to the sacred Temple of the Tooth Relic. Visitors can experience the spiritual atmosphere of this important pilgrimage site, enjoy a peaceful walk around Kandy Lake, and witness a traditional cultural dance performance. The surrounding tea plantations and scenic landscapes add charm and elegance to this historic city.'
+            },
+            {
+                title: 'Ella – Scenic Hill Country Escape',
+                description: 'Ella is a picturesque hill town known for its cool climate, stunning landscapes, and relaxed atmosphere. Surrounded by tea plantations and rolling mountains, Ella offers breathtaking viewpoints and nature experiences such as Little Adam\'s Peak, Ella Rock, and the famous Nine Arch Bridge. This destination is perfect for nature lovers and photographers seeking tranquil beauty.'
+            },
+            {
+                title: 'Tissamaharama – Wildlife and Nature Experience',
+                description: 'Tissamaharama is the gateway to Sri Lanka\'s most famous wildlife reserves, including Yala National Park. This region offers exciting wildlife safari experiences where travelers may encounter elephants, leopards, crocodiles, and a variety of bird species. The area is also known for its ancient stupas and peaceful lakes, creating a calm and authentic rural atmosphere.'
+            },
+            {
+                title: 'Bentota – Beach Relaxation on the South Coast',
+                description: 'The journey concludes in Bentota, a beautiful coastal town known for its golden sandy beaches and turquoise waters. Bentota is ideal for relaxation, beach walks, and optional water sports activities. Guests can also enjoy a scenic river safari along the Bentota River or simply unwind while watching stunning tropical sunsets by the ocean.'
+            }
         ],
         included: [
             'Airport pickup & drop',
@@ -71,10 +105,10 @@ const destinationsData = {
             'Train tickets & meals'
         ],
         images: [
-            'images/galle.png',
-            'images/ClassicSriLanka.png',
             'images/sigiriya.png',
-            'images/polonnaru.png'
+            'images/kandy1.png',
+            'images/E1.png',
+            'images/7.png'
         ]
     },
     'cultural-beach-sri-lanka': {
@@ -88,13 +122,32 @@ const destinationsData = {
         group: 'Private Tour',
         languages: 'English',
         availability: 'All year',
-        description: 'This tour connects Sri Lanka\'s ancient cities, scenic hill country, wildlife experiences, and beautiful southern beaches—perfect for adventure and culture lovers.',
+        description: 'This Sri Lanka Cultural & Beach Tour offers a perfect combination of ancient heritage, scenic hill country, wildlife, and relaxing beach experiences. Designed for travelers who want to explore the cultural heart of Sri Lanka and unwind along the beautiful southern coastline, this journey showcases the island\'s most iconic destinations. The tour covers Sigiriya, Kandy, Nuwara Eliya, Ella, Mirissa, and Bentota, delivering a rich and well-balanced Sri Lankan travel experience.',
         highlights: [
-            'Sigiriya Rock Fortress',
-            'Kandy & Temple of the Tooth',
-            'Nuwara Eliya & Ella viewpoints',
-            'Optional Yala Safari',
-            'Bentota beach stay'
+            {
+                title: 'Sigiriya – Ancient Rock Fortress',
+                description: 'Sigiriya is one of Sri Lanka\'s most famous UNESCO World Heritage Sites and a true symbol of the country\'s ancient civilization. This magnificent rock fortress rises nearly 200 meters above the surrounding plains. Visitors can explore the Lion\'s Paws, ancient frescoes, mirror wall inscriptions, and beautifully landscaped royal gardens. The panoramic views from the summit are breathtaking and unforgettable.'
+            },
+            {
+                title: 'Kandy – Cultural Capital of Sri Lanka',
+                description: 'Kandy is the cultural heart of Sri Lanka and home to the sacred Temple of the Tooth Relic. Surrounded by lush hills, the city offers a blend of spirituality, history, and natural beauty. Visitors can enjoy a peaceful walk around Kandy Lake, experience traditional cultural dance performances, and explore nearby tea plantations that reflect Sri Lanka\'s colonial heritage.'
+            },
+            {
+                title: 'Nuwara Eliya – Little England',
+                description: 'Known as "Little England," Nuwara Eliya is a charming hill town famous for its cool climate, colonial architecture, and endless tea plantations. Visitors can enjoy scenic landscapes, waterfalls, misty mountains, and well-manicured gardens. A visit to Nuwara Eliya provides insight into Sri Lanka\'s tea industry and offers a refreshing escape into the cool hill country.'
+            },
+            {
+                title: 'Ella – Scenic Hill Country Paradise',
+                description: 'Ella is a relaxed hill town surrounded by breathtaking mountain views and lush greenery. It is well known for natural attractions such as Little Adam\'s Peak, Ella Rock, and the iconic Nine Arch Bridge. The cool climate, scenic hiking trails, and peaceful atmosphere make Ella a favorite destination for nature lovers and photographers.'
+            },
+            {
+                title: 'Mirissa – Tropical Beach Experience',
+                description: 'Mirissa is a laid-back beach town on Sri Lanka\'s south coast, famous for its golden sandy beaches and turquoise waters. It is one of the best places in Sri Lanka for whale watching and offers a relaxed coastal vibe. Visitors can enjoy beach walks, swimming, fresh seafood, and stunning sunsets by the ocean.'
+            },
+            {
+                title: 'Bentota – Relaxation on the South Coast',
+                description: 'Bentota is a popular beach destination known for its calm beaches and tropical charm. It is ideal for relaxation after exploring Sri Lanka\'s cultural and hill country regions. Visitors can enjoy beach leisure, optional water sports, river safaris along the Bentota River, or simply unwind while enjoying the serene coastal atmosphere.'
+            }
         ],
         included: [
             'Airport transfers',
@@ -107,10 +160,10 @@ const destinationsData = {
             'Safari, train tickets & meals'
         ],
         images: [
-            'images/ClassicSriLanka.png',
             'images/sigiriya.png',
-            'images/polonnaru.png',
-            'images/galle.png'
+            'images/kandy1.png',
+            'images/N.png',
+            'images/M.png'
         ]
     },
     'japan': {
@@ -409,19 +462,57 @@ destinationsData['grand-sri-lanka'] = {
     group: 'Private Tour',
     languages: 'English',
     availability: 'All year',
-    description: 'Comprehensive 10-day journey covering all major attractions from ancient kingdoms in the north to southern beaches. Experience Sri Lanka\'s complete cultural and natural heritage with visits to Anuradhapura, Sigiriya, Polonnaruwa, Kandy, hill country, wildlife safaris, and coastal gems.',
+    description: 'The Grand Sri Lanka Tour is a complete and immersive journey designed to showcase the very best of Sri Lanka\'s cultural heritage, ancient history, scenic hill country, wildlife, and tropical beaches. This tour takes travelers across the island, from ancient kingdoms and sacred temples to misty mountains and the stunning southern coastline. Covering Negombo, Anuradhapura, Polonnaruwa, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Tissamaharama, Mirissa, and Galle, this tour offers a truly well-rounded Sri Lankan experience.',
     highlights: [
-        'Ancient kingdoms: Anuradhapura, Sigiriya, Polonnaruwa',
-        'Kandy Temple of the Tooth & cultural show',
-        'Hill country train route (Nuwara Eliya to Ella)',
-        'Optional Yala wildlife safari',
-        'Galle Fort & southern beaches',
-        'Colombo city tour'
+        {
+            title: 'Negombo – Coastal Start',
+            description: 'Negombo is a lively coastal town located close to the international airport and serves as an ideal starting point for the journey. Known for its sandy beaches, fishing villages, and colonial heritage, Negombo offers a relaxing introduction to Sri Lanka with a blend of local culture and coastal charm.'
+        },
+        {
+            title: 'Anuradhapura – Ancient Kingdom',
+            description: 'Anuradhapura is one of Sri Lanka\'s most important ancient cities and a UNESCO World Heritage Site. This sacred city is home to impressive dagobas, ancient monasteries, and the Sri Maha Bodhi tree, the oldest recorded living tree in the world. Visitors can explore the rich history and spiritual atmosphere of Sri Lanka\'s first great kingdom.'
+        },
+        {
+            title: 'Polonnaruwa – Medieval Capital',
+            description: 'Polonnaruwa, another UNESCO World Heritage Site, showcases the grandeur of Sri Lanka\'s medieval civilization. The city features well-preserved ruins including royal palaces, stone temples, massive Buddha statues, and ancient irrigation systems that highlight the engineering skills of ancient Sri Lanka.'
+        },
+        {
+            title: 'Sigiriya – Iconic Rock Fortress',
+            description: 'Sigiriya Rock Fortress is one of Sri Lanka\'s most iconic landmarks. Rising nearly 200 meters above the surrounding plains, this ancient rock citadel features stunning frescoes, mirror wall inscriptions, landscaped gardens, and the famous Lion\'s Paws. The panoramic view from the summit is one of the most breathtaking sights in the country.'
+        },
+        {
+            title: 'Dambulla – Golden Cave Temple',
+            description: 'Dambulla is home to the famous Golden Cave Temple, a UNESCO World Heritage Site with over 150 Buddha statues and beautifully painted cave ceilings. This sacred complex is one of the best-preserved cave temples in Asia and an important religious site in Sri Lanka.'
+        },
+        {
+            title: 'Kandy – Cultural Capital',
+            description: 'Kandy is the cultural heart of Sri Lanka and home to the sacred Temple of the Tooth Relic. Surrounded by hills and lush greenery, the city offers a blend of spirituality, history, and natural beauty. Visitors can enjoy Kandy Lake, traditional cultural dance performances, and nearby tea plantations.'
+        },
+        {
+            title: 'Nuwara Eliya – Little England',
+            description: 'Nuwara Eliya is a charming hill town known for its cool climate, colonial-era architecture, and endless tea plantations. Often referred to as "Little England," this destination offers scenic landscapes, waterfalls, and insight into Sri Lanka\'s famous tea industry.'
+        },
+        {
+            title: 'Ella – Scenic Hill Country',
+            description: 'Ella is a picturesque hill town surrounded by misty mountains and tea-covered slopes. Highlights include Little Adam\'s Peak, Ella Rock, and the iconic Nine Arch Bridge. The relaxed atmosphere and breathtaking scenery make Ella a favorite for nature lovers.'
+        },
+        {
+            title: 'Tissamaharama – Wildlife Experience',
+            description: 'Tissamaharama is the gateway to Sri Lanka\'s top wildlife parks, including Yala National Park. This region offers exciting safari experiences where visitors may spot elephants, leopards, crocodiles, and diverse birdlife. The area is also known for its peaceful lakes and ancient stupas.'
+        },
+        {
+            title: 'Mirissa – Tropical Beach Paradise',
+            description: 'Mirissa is a popular beach destination famous for its golden sands and turquoise waters. It is one of the best locations in Sri Lanka for whale watching and offers a relaxed coastal vibe, beach walks, fresh seafood, and stunning sunsets.'
+        },
+        {
+            title: 'Galle – Colonial Heritage City',
+            description: 'Galle is a historic coastal city known for the UNESCO-listed Galle Fort. Built during the Dutch colonial era, the fort features cobblestone streets, colonial buildings, boutique shops, and ocean views. Galle beautifully blends history, culture, and seaside charm.'
+        }
     ],
     included: [
         'Airport pickup & drop-off',
         'Private air-conditioned vehicle',
-        'English-speaking driver/guide',
+        'English-speaking driver',
         'All transfers as per itinerary',
         'Fuel, parking & highway charges'
     ],
@@ -452,14 +543,20 @@ destinationsData['honeymoon-sri-lanka'] = {
     group: 'Private Tour for Couples',
     languages: 'English',
     availability: 'All year',
-    description: 'A romantic 4-day getaway designed for newlyweds. Experience the misty hill country romance, scenic tea plantations, breathtaking waterfalls, and pristine beaches. Includes luxury private vehicle, custom honeymoon itinerary, and optional candle light dinner arrangements.',
+    description: 'This Honeymoon Tour Package is thoughtfully designed for couples seeking romance, comfort, and unforgettable moments in Sri Lanka. Blending scenic hill country beauty with peaceful beach relaxation, this journey offers the perfect balance of adventure, tranquility, and intimate experiences for newlyweds. Covering Kandy, Nuwara Eliya, and Bentota, this tour promises a magical honeymoon filled with natural beauty, cultural charm, and relaxation.',
     highlights: [
-        'Romantic hill country stays',
-        'Tea plantations & scenic viewpoints',
-        'Waterfalls & nature walks',
-        'Beach relaxation in Bentota',
-        'Candle light dinner (optional)',
-        'Private luxury vehicle & custom itinerary'
+        {
+            title: 'Kandy – Romantic Cultural City',
+            description: 'Kandy is a charming hill city surrounded by lush greenery and misty mountains, offering a romantic and peaceful atmosphere. Couples can visit the sacred Temple of the Tooth Relic, enjoy a serene walk around Kandy Lake, and experience traditional cultural dance performances. The cool climate and scenic views make Kandy a perfect start to a romantic journey.'
+        },
+        {
+            title: 'Nuwara Eliya – Misty Hill Country Romance',
+            description: 'Often referred to as "Little England," Nuwara Eliya is one of the most romantic destinations in Sri Lanka. With its cool climate, rolling tea plantations, colonial-style buildings, and beautiful waterfalls, this hill town offers a dreamy escape for couples. Enjoy quiet walks through tea estates, scenic viewpoints, and peaceful moments surrounded by nature.'
+        },
+        {
+            title: 'Bentota – Beachside Relaxation',
+            description: 'Bentota is an ideal honeymoon destination for couples looking to relax by the ocean. Known for its golden sandy beaches and calm turquoise waters, Bentota offers the perfect setting for beach walks, sunset views, and private relaxation. Couples can also enjoy optional water sports, river safaris, or simply unwind in a romantic beachfront resort.'
+        }
     ],
     included: [
         'Airport pickup & drop-off',
@@ -476,10 +573,10 @@ destinationsData['honeymoon-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'images/B1.png',
-        'images/polonnaru.png',
+        'images/kandy.png',
+        'images/N.png',
         'images/ella.png',
-        'images/sigiriya.png'
+        'images/B1.png'
     ]
 };
 
@@ -494,19 +591,61 @@ destinationsData['ultimate-sri-lanka'] = {
     group: 'Private & Customizable',
     languages: 'English',
     availability: 'All year',
-    description: 'The complete Sri Lankan experience! Perfect for first-time visitors and nature + culture lovers. This comprehensive 14-day tour covers ancient cities, hill country, rainforests, wildlife safaris, pristine beaches, and modern Colombo. Fully private and customizable to your preferences.',
+    description: 'The Ultimate Sri Lanka Grand Tour is a complete island-wide journey designed for travelers who want to experience Sri Lanka in its entirety. This immersive tour combines ancient history, cultural heritage, scenic hill country, rich biodiversity, wildlife experiences, pristine beaches, and vibrant city life into one unforgettable adventure. Covering Negombo, Anuradhapura, Sigiriya, Kandy, Nuwara Eliya, Ella, Tissamaharama, Sinharaja Rainforest, Mirissa, Galle, Bentota, and Colombo, this tour offers the most comprehensive Sri Lankan travel experience.',
     highlights: [
-        'Cultural Triangle: Anuradhapura, Sigiriya, Kandy',
-        'Hill country: Nuwara Eliya, Ella, Haputale',
-        'Yala National Park wildlife safari',
-        'Sinharaja Rainforest trek',
-        'Bentota beach & water sports',
-        'Colombo shopping & city tour'
+        {
+            title: 'Negombo – Coastal Welcome',
+            description: 'Negombo is a lively seaside town close to the international airport, making it the perfect starting point for the journey. Known for its sandy beaches, fishing villages, and colonial heritage, Negombo offers a relaxing introduction to Sri Lanka\'s coastal charm and local culture.'
+        },
+        {
+            title: 'Anuradhapura – Ancient Sacred City',
+            description: 'Anuradhapura, a UNESCO World Heritage Site, is one of Sri Lanka\'s most sacred and historically significant cities. Home to massive dagobas, ancient monasteries, and the revered Sri Maha Bodhi tree, this ancient capital reflects the spiritual and architectural brilliance of Sri Lanka\'s early civilization.'
+        },
+        {
+            title: 'Sigiriya – Iconic Rock Fortress',
+            description: 'Sigiriya Rock Fortress is one of the most iconic landmarks in Sri Lanka. Rising dramatically above the surrounding plains, this ancient citadel features world-famous frescoes, mirror wall inscriptions, landscaped water gardens, and the legendary Lion\'s Paws. The panoramic views from the summit are truly breathtaking.'
+        },
+        {
+            title: 'Kandy – Cultural Heart of Sri Lanka',
+            description: 'Kandy is the cultural capital of Sri Lanka and home to the sacred Temple of the Tooth Relic. Surrounded by lush hills, the city offers a blend of spirituality, history, and natural beauty. Visitors can enjoy Kandy Lake, traditional cultural dance performances, and scenic tea-covered landscapes.'
+        },
+        {
+            title: 'Nuwara Eliya – Cool Hill Country Escape',
+            description: 'Often called "Little England," Nuwara Eliya is known for its cool climate, colonial architecture, and endless tea plantations. The misty mountains, waterfalls, and manicured gardens make this hill town a refreshing and picturesque retreat.'
+        },
+        {
+            title: 'Ella – Scenic Mountain Paradise',
+            description: 'Ella is a peaceful hill town surrounded by dramatic mountain views and tea plantations. Highlights include Little Adam\'s Peak, Ella Rock, and the iconic Nine Arch Bridge. The relaxed atmosphere and stunning scenery make Ella a favorite destination for nature lovers.'
+        },
+        {
+            title: 'Tissamaharama – Wildlife & Safari Experience',
+            description: 'Tissamaharama serves as the gateway to Sri Lanka\'s most famous wildlife parks, including Yala National Park. This region offers thrilling safari experiences where visitors may spot elephants, leopards, crocodiles, and a wide variety of bird species, along with serene lakes and ancient stupas.'
+        },
+        {
+            title: 'Sinharaja Rainforest – Biodiversity Hotspot',
+            description: 'Sinharaja Rainforest is a UNESCO World Heritage Site and one of Sri Lanka\'s last remaining primary rainforests. This biodiversity hotspot is home to rare endemic flora and fauna. Guided nature walks allow visitors to experience the dense jungle, waterfalls, and rich wildlife in a truly natural environment.'
+        },
+        {
+            title: 'Mirissa – Tropical Beach Escape',
+            description: 'Mirissa is a laid-back beach town famous for its golden sands and turquoise waters. It is one of the best places in Sri Lanka for whale watching and offers a relaxed coastal vibe with stunning sunsets and fresh seafood.'
+        },
+        {
+            title: 'Galle – Colonial Heritage City',
+            description: 'Galle is a historic coastal city centered around the UNESCO-listed Galle Fort. With its colonial architecture, cobblestone streets, boutique shops, and ocean views, Galle beautifully blends history, culture, and seaside charm.'
+        },
+        {
+            title: 'Bentota – Beach Relaxation',
+            description: 'Bentota is known for its calm beaches and tropical atmosphere, making it ideal for relaxation and leisure. Visitors can enjoy beach walks, optional water sports, scenic river safaris, or simply unwind by the ocean.'
+        },
+        {
+            title: 'Colombo – Modern Capital City',
+            description: 'The journey concludes in Colombo, Sri Lanka\'s vibrant commercial capital. This bustling city offers a mix of modern development, colonial landmarks, shopping, dining, and cultural attractions, providing a fitting end to a comprehensive island adventure.'
+        }
     ],
     included: [
         'Airport transfers',
         'Private luxury vehicle',
-        'English-speaking driver/guide',
+        'English-speaking driver',
         'All transportation as per itinerary',
         'Flexible schedule'
     ],
@@ -537,14 +676,24 @@ destinationsData['beach-vacation-sri-lanka'] = {
     group: 'Private Tour',
     languages: 'English',
     availability: 'All year (whale watching seasonal)',
-    description: 'Relax and unwind on Sri Lanka\'s stunning southern coastline. Perfect beach vacation with Bentota river safari, historic Galle Fort exploration, seasonal whale watching in Mirissa, and plenty of time to soak up the sun on pristine beaches.',
+    description: 'The Beach Vacation Tour is designed for travelers who want to relax, unwind, and experience the natural beauty of Sri Lanka\'s southern coastline. This tour offers the perfect blend of golden beaches, turquoise waters, coastal culture, and laid-back tropical vibes, making it ideal for beach lovers and leisure travelers. Covering Bentota, Galle, Mirissa, and Tangalle, this journey takes you through some of the most beautiful beach destinations in Sri Lanka.',
     highlights: [
-        'Bentota beach & river safari',
-        'Galle Fort UNESCO site',
-        'Whale watching in Mirissa (seasonal)',
-        'Beach hopping along the south coast',
-        'Water sports & relaxation',
-        'Fresh seafood dining'
+        {
+            title: 'Bentota – Coastal Relaxation',
+            description: 'Bentota is a popular beach destination known for its wide sandy beaches and calm ocean waters. It is ideal for swimming, beach walks, and relaxation. Visitors can also enjoy optional water sports, river safaris along the Bentota River, or simply unwind at a beachfront resort while enjoying tropical sunsets.'
+        },
+        {
+            title: 'Galle – Historic Coastal City',
+            description: 'Galle is a charming coastal city famous for the UNESCO-listed Galle Fort. The fort\'s colonial architecture, cobblestone streets, and ocean views offer a unique cultural experience by the sea. Visitors can explore boutique shops, cafés, historic landmarks, and enjoy scenic walks along the fort walls.'
+        },
+        {
+            title: 'Mirissa – Tropical Beach Paradise',
+            description: 'Mirissa is a laid-back beach town known for its golden sands and crystal-clear waters. It is one of the best locations in Sri Lanka for seasonal whale watching and offers a relaxed atmosphere perfect for beach relaxation. Visitors can enjoy swimming, fresh seafood, beach cafés, and breathtaking sunsets.'
+        },
+        {
+            title: 'Tangalle – Tranquil Beach Escape',
+            description: 'Tangalle is a peaceful beach destination ideal for travelers seeking serenity and natural beauty. With its pristine beaches, swaying palm trees, and fewer crowds, Tangalle offers a truly relaxing coastal escape. It is perfect for quiet beach walks, ocean views, and complete relaxation away from busy tourist areas.'
+        }
     ],
     included: [
         'Airport pickup & drop-off',
@@ -580,14 +729,24 @@ destinationsData['hill-country-escape'] = {
     group: 'Private Tour',
     languages: 'English',
     availability: 'All year',
-    description: 'Escape to the cool misty mountains of Sri Lanka\'s hill country. Explore lush tea estates, cascading waterfalls, scenic viewpoints, and charming mountain villages. Experience the famous scenic train ride and breathtaking landscapes.',
+    description: 'The Hill Country Escape is a refreshing journey into the cool, misty mountains of Sri Lanka, perfect for travelers seeking scenic beauty, peaceful surroundings, and authentic hill country experiences. This tour takes you through lush tea plantations, charming mountain towns, waterfalls, and breathtaking viewpoints, offering a calm and rejuvenating escape from busy city life. Covering Kandy, Mandaramnuwara, Nuwara Eliya, and Haputale, this tour showcases the most beautiful and tranquil regions of Sri Lanka\'s hill country.',
     highlights: [
-        'Tea estates & factory tours',
-        'Waterfalls: Ramboda, Ravana, Diyaluma',
-        'Scenic viewpoints: World\'s End, Ella Rock',
-        'Cool climate mountain villages',
-        'Scenic train ride (optional)',
-        'Colonial architecture & gardens'
+        {
+            title: 'Kandy – Cultural Hill City',
+            description: 'Kandy is the cultural heart of Sri Lanka, surrounded by green hills and scenic landscapes. Home to the sacred Temple of the Tooth Relic, Kandy offers a peaceful blend of culture, history, and natural beauty. Visitors can enjoy a walk around Kandy Lake, explore local markets, and experience traditional cultural performances before heading deeper into the mountains.'
+        },
+        {
+            title: 'Mandaramnuwara – Hidden Mountain Village',
+            description: 'Mandaramnuwara is a remote and picturesque mountain village known for its untouched natural beauty, mist-covered valleys, and cool climate. Surrounded by dense forests, waterfalls, and tea plantations, this hidden gem offers a truly authentic hill country experience. It is ideal for nature lovers seeking tranquility, fresh mountain air, and scenic viewpoints away from crowds.'
+        },
+        {
+            title: 'Nuwara Eliya – Little England',
+            description: 'Nuwara Eliya, often called "Little England," is famous for its cool weather, colonial-era architecture, and endless tea estates. Visitors can enjoy scenic landscapes, waterfalls, well-manicured gardens, and a glimpse into Sri Lanka\'s tea-growing heritage. The calm atmosphere and fresh climate make Nuwara Eliya one of the most relaxing destinations in the hill country.'
+        },
+        {
+            title: 'Haputale – Panoramic Mountain Views',
+            description: 'Haputale is a charming hill town offering some of the most spectacular panoramic views in Sri Lanka. Surrounded by rolling hills and tea plantations, Haputale is known for its peaceful environment and scenic viewpoints such as mountain ridges and valleys stretching far into the distance. The cool climate and quiet surroundings make it an ideal place to relax and enjoy nature.'
+        }
     ],
     included: [
         'Airport pickup & drop-off',
@@ -623,19 +782,37 @@ destinationsData['highlights-tour-sri-lanka'] = {
     group: 'Private Tour',
     languages: 'English',
     availability: 'All year',
-    description: 'Experience Sri Lanka\'s best highlights in one week! Cultural triangle ancient sites, pristine east coast beaches, hill country tea estates, optional white water rafting adventure in Kitulgala, and modern Colombo city tour.',
+    description: 'The Sri Lanka Highlights Tour is a carefully designed journey that brings together the island\'s most important cultural landmarks, scenic hill country, beautiful eastern coastline, and vibrant modern city life. This tour is ideal for travelers who want to experience Sri Lanka\'s top attractions in one well-balanced and unforgettable itinerary. Covering Anuradhapura, Trincomalee, Sigiriya, Kandy, Nuwara Eliya, and Colombo, this tour showcases the very best highlights of Sri Lanka.',
     highlights: [
-        'Cultural Triangle: Anuradhapura, Sigiriya',
-        'Trincomalee east coast beaches',
-        'Kandy cultural capital',
-        'Nuwara Eliya tea country',
-        'White water rafting in Kitulgala (optional)',
-        'Colombo city & shopping tour'
+        {
+            title: 'Anuradhapura – Ancient Sacred City',
+            description: 'Anuradhapura is one of Sri Lanka\'s most sacred and historically significant cities and a UNESCO World Heritage Site. This ancient capital is home to massive dagobas, ancient monasteries, and the revered Sri Maha Bodhi tree, the oldest recorded living tree in the world. Visitors can explore the rich history, spiritual heritage, and impressive architecture of Sri Lanka\'s first great kingdom.'
+        },
+        {
+            title: 'Trincomalee – East Coast Paradise',
+            description: 'Trincomalee is a stunning coastal city on Sri Lanka\'s east coast, famous for its pristine beaches, turquoise waters, and natural harbor. Visitors can relax on beautiful beaches, enjoy optional snorkeling or swimming, and visit cultural landmarks such as the historic Koneswaram Temple. Trincomalee offers a perfect blend of beach relaxation and cultural discovery.'
+        },
+        {
+            title: 'Sigiriya – Iconic Rock Fortress',
+            description: 'Sigiriya Rock Fortress is one of Sri Lanka\'s most iconic landmarks and a UNESCO World Heritage Site. Rising dramatically above the surrounding plains, this ancient rock citadel features famous frescoes, mirror wall inscriptions, landscaped water gardens, and the impressive Lion\'s Paws. The panoramic views from the summit are truly breathtaking.'
+        },
+        {
+            title: 'Kandy – Cultural Heart of Sri Lanka',
+            description: 'Kandy is the cultural capital of Sri Lanka and home to the sacred Temple of the Tooth Relic. Surrounded by lush hills, the city offers a blend of spirituality, history, and natural beauty. Visitors can enjoy Kandy Lake, experience traditional cultural dance performances, and explore nearby tea plantations.'
+        },
+        {
+            title: 'Nuwara Eliya – Cool Hill Country Retreat',
+            description: 'Often referred to as "Little England," Nuwara Eliya is known for its cool climate, colonial-era architecture, and endless tea estates. Visitors can enjoy misty mountain views, scenic waterfalls, well-maintained gardens, and a glimpse into Sri Lanka\'s world-famous tea industry.'
+        },
+        {
+            title: 'Colombo – Modern Capital Experience',
+            description: 'The tour concludes in Colombo, Sri Lanka\'s dynamic commercial capital. This bustling city offers a mix of modern development, colonial landmarks, shopping areas, cultural attractions, and vibrant dining experiences, providing a perfect ending to a diverse island journey.'
+        }
     ],
     included: [
         'Airport pickup & drop-off',
         'Private air-conditioned vehicle',
-        'English-speaking driver/guide',
+        'English-speaking driver',
         'All transfers as per itinerary',
         'Flexible schedule'
     ],
@@ -652,91 +829,6 @@ destinationsData['highlights-tour-sri-lanka'] = {
         'images/sigiriya.png',
         'images/galle.png',
         'images/polonnaru.png'
-    ]
-};
-
-destinationsData['sri-lanka-explorer'] = {
-    name: 'Sri Lanka Explorer Tour',
-    location: 'Colombo to Cultural Triangle',
-    price: 350,
-    priceNote: '(without hotels)',
-    rating: 4.6,
-    reviews: 45,
-    duration: '4 Days / 3 Nights',
-    group: 'Private Tour',
-    languages: 'English',
-    availability: 'All year',
-    description: 'Experience the best of Sri Lanka in 4 days - ancient temples, scenic hills, and vibrant culture. Perfect for first-time visitors wanting to see the highlights.',
-    highlights: [
-        'Sigiriya Rock Fortress',
-        'Ancient city of Polonnaruwa',
-        'Temple of the Tooth - Kandy',
-        'Royal Botanical Gardens',
-        'Traditional cultural show',
-        'Scenic mountain views'
-    ],
-    included: [
-        'Airport pickup & drop-off',
-        'Private air-conditioned vehicle',
-        'English-speaking driver/guide',
-        'All transfers as per itinerary',
-        'Bottled water daily'
-    ],
-    excluded: [
-        'Hotels & accommodation',
-        'Meals & beverages',
-        'Entrance tickets',
-        'Cultural show tickets',
-        'Personal expenses'
-    ],
-    images: [
-        'images/sigiriya.png',
-        'images/ClassicSriLanka.png',
-        'images/galle.png',
-        'images/polonnaru.png'
-    ]
-};
-
-destinationsData['classic-sri-lanka'] = {
-    name: 'Classic Sri Lanka Tour',
-    location: 'Colombo to South Coast',
-    price: 520,
-    priceNote: '(without hotels)',
-    rating: 4.8,
-    reviews: 62,
-    duration: '6 Days / 5 Nights',
-    group: 'Private Tour',
-    languages: 'English',
-    availability: 'All year',
-    description: 'Discover Sigiriya Rock, Kandy Temple, tea plantations, and stunning beaches in 6 magical days. The perfect blend of culture, nature, and relaxation.',
-    highlights: [
-        'Sigiriya Rock Fortress & frescoes',
-        'Dambulla Cave Temple',
-        'Temple of the Tooth - Kandy',
-        'Nuwara Eliya tea plantations',
-        'Scenic train ride through hills',
-        'South coast beaches - Bentota/Mirissa'
-    ],
-    included: [
-        'Airport pickup & drop-off',
-        'Private air-conditioned vehicle',
-        'English-speaking driver/guide',
-        'All transfers as per itinerary',
-        'Train tickets for scenic route',
-        'Bottled water daily'
-    ],
-    excluded: [
-        'Hotels & accommodation',
-        'Meals & beverages',
-        'Entrance tickets',
-        'Beach activities',
-        'Personal expenses'
-    ],
-    images: [
-        'images/sigiriya.png',
-        'images/polonnaru.png',
-        'images/galle.png',
-        'images/ella.png'
     ]
 };
 

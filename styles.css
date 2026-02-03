@@ -4409,6 +4409,32 @@ img {
     margin-top: 2px;
 }
 
+/* Detailed Highlight Items */
+.highlight-item {
+    flex: 1;
+}
+
+.highlight-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #1e293b;
+}
+
+.highlight-title strong {
+    font-weight: 600;
+}
+
+.highlight-description {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+    padding-left: 30px;
+    margin-top: 8px;
+}
+
 /* Quick Info */
 .detail-quick-info {
     display: grid;

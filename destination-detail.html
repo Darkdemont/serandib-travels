@@ -97,7 +97,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
-                                    <span id="destRating">4.8</span> (245 Reviews)
+                                    <span id="destRating">4.8</span> (120 Reviews)
                                 </span>
                             </div>
                         </div>
@@ -182,23 +182,19 @@
                     <form class="booking-form" id="bookingForm">
                         <div class="form-group">
                             <label><i class="fas fa-user"></i> Full Name</label>
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="fullName" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
                             <label><i class="fas fa-envelope"></i> Email</label>
-                            <input type="email" placeholder="your@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label><i class="fas fa-phone"></i> Phone</label>
-                            <input type="tel" placeholder="+1 234 567 8900" required>
+                            <input type="email" name="email" placeholder="your@email.com" required>
                         </div>
                         <div class="form-group">
                             <label><i class="fas fa-calendar"></i> Travel Date</label>
-                            <input type="date" required>
+                            <input type="date" name="travelDate" required>
                         </div>
                         <div class="form-group">
                             <label><i class="fas fa-users"></i> Number of Travelers</label>
-                            <select required>
+                            <select name="travelers" required>
                                 <option value="">Select...</option>
                                 <option value="1">1 Person</option>
                                 <option value="2">2 People</option>
@@ -209,10 +205,10 @@
                         </div>
                         <div class="form-group">
                             <label><i class="fas fa-comment"></i> Special Requests</label>
-                            <textarea rows="3" placeholder="Any special requirements?"></textarea>
+                            <textarea name="specialRequests" rows="3" placeholder="Any special requirements?"></textarea>
                         </div>
                         <button type="submit" class="booking-submit-btn">
-                            <i class="fas fa-paper-plane"></i> Send Inquiry
+                            <i class="fas fa-paper-plane"></i> Send Inquiry via WhatsApp
                         </button>
                     </form>
                 </div>
