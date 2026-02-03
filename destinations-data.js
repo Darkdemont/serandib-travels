@@ -43,7 +43,9 @@ const destinationsData = {
             'Private air-conditioned vehicle',
             'English-speaking driver',
             'Fuel, parking & highway charges',
-            'All transfers as per itinerary'
+            'All transfers as per itinerary',
+            'Complimentary water throughout the tour',
+            'Parking charges and tolls included'
         ],
         excluded: [
             'Hotel accommodation',
@@ -97,7 +99,9 @@ const destinationsData = {
             'Airport pickup & drop',
             'Private A/C vehicle',
             'English-speaking driver',
-            'Sightseeing as per itinerary'
+            'Sightseeing as per itinerary',
+            'Complimentary water throughout the tour',
+            'Parking charges and tolls included'
         ],
         excluded: [
             'Hotels',
@@ -152,7 +156,9 @@ const destinationsData = {
         included: [
             'Airport transfers',
             'Private air-conditioned vehicle',
-            'English-speaking driver'
+            'English-speaking driver',
+            'Complimentary water throughout the tour',
+            'Parking charges and tolls included'
         ],
         excluded: [
             'Hotels',
@@ -514,7 +520,9 @@ destinationsData['grand-sri-lanka'] = {
         'Private air-conditioned vehicle',
         'English-speaking driver',
         'All transfers as per itinerary',
-        'Fuel, parking & highway charges'
+        'Fuel, parking & highway charges',
+        'Complimentary water throughout the tour',
+        'Parking charges and tolls included'
     ],
     excluded: [
         'Hotel accommodation',
@@ -563,7 +571,9 @@ destinationsData['honeymoon-sri-lanka'] = {
         'Luxury private air-conditioned vehicle',
         'English-speaking driver',
         'Romantic setup assistance',
-        'All transfers as per itinerary'
+        'All transfers as per itinerary',
+        'Complimentary water throughout the tour',
+        'Parking charges and tolls included'
     ],
     excluded: [
         'Hotels & meals',
@@ -647,7 +657,9 @@ destinationsData['ultimate-sri-lanka'] = {
         'Private luxury vehicle',
         'English-speaking driver',
         'All transportation as per itinerary',
-        'Flexible schedule'
+        'Flexible schedule',
+        'Complimentary water throughout the tour',
+        'Parking charges and tolls included'
     ],
     excluded: [
         'Hotels',
@@ -700,7 +712,9 @@ destinationsData['beach-vacation-sri-lanka'] = {
         'Private air-conditioned vehicle',
         'English-speaking driver',
         'Coastal sightseeing',
-        'All transfers'
+        'All transfers',
+        'Complimentary water throughout the tour',
+        'Parking charges and tolls included'
     ],
     excluded: [
         'Hotels',
@@ -753,7 +767,9 @@ destinationsData['hill-country-escape'] = {
         'Private air-conditioned vehicle',
         'English-speaking driver',
         'Scenic mountain drives',
-        'All transfers'
+        'All transfers',
+        'Complimentary water throughout the tour',
+        'Parking charges and tolls included'
     ],
     excluded: [
         'Hotels',
@@ -814,7 +830,9 @@ destinationsData['highlights-tour-sri-lanka'] = {
         'Private air-conditioned vehicle',
         'English-speaking driver',
         'All transfers as per itinerary',
-        'Flexible schedule'
+        'Flexible schedule',
+        'Complimentary water throughout the tour',
+        'Parking charges and tolls included'
     ],
     excluded: [
         'Hotels & accommodation',
