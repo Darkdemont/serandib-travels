@@ -141,9 +141,30 @@ function loadDestinationDetails(destId) {
                 mainImage.src = img;
                 document.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
                 thumb.classList.add('active');
+                currentImageIndex = index; // Update current index when clicking thumbnail
             });
             thumbsContainer.appendChild(thumb);
         });
+        
+        // Auto-slide images every 4 seconds
+        let currentImageIndex = 0;
+        setInterval(() => {
+            // Fade out
+            mainImage.style.opacity = '0';
+            
+            setTimeout(() => {
+                currentImageIndex = (currentImageIndex + 1) % dest.images.length;
+                mainImage.src = dest.images[currentImageIndex];
+                
+                // Update active thumbnail
+                const thumbs = document.querySelectorAll('.gallery-thumb');
+                thumbs.forEach(t => t.classList.remove('active'));
+                thumbs[currentImageIndex].classList.add('active');
+                
+                // Fade in
+                mainImage.style.opacity = '1';
+            }, 400);
+        }, 4000);
     }
     
     // Update highlights

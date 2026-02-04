@@ -18,10 +18,6 @@ const destinationsData = {
                 description: 'The journey begins in the Cultural Triangle with Sigiriya, home to the world-famous Sigiriya Rock Fortress, a UNESCO World Heritage Site and one of Asia\'s most remarkable ancient monuments. Rising dramatically above the surrounding plains, Sigiriya showcases extraordinary ancient engineering, royal gardens, frescoes, and breathtaking panoramic views from the summit. Visitors can also enjoy nearby viewpoints and optional village experiences that reveal the authentic rural lifestyle of Sri Lanka.'
             },
             {
-                title: 'Ancient city of Polonnaruwa',
-                description: 'Explore the magnificent ruins of Polonnaruwa, Sri Lanka\'s medieval capital and another UNESCO World Heritage Site. This ancient city features remarkably preserved stone sculptures, royal palaces, and sacred temples that tell the story of a once-thriving kingdom. Cycle through the archaeological park to witness the famous Gal Vihara rock sculptures, the Royal Palace complex, and beautiful lotus ponds that transport you back to the golden age of Sinhalese civilization.'
-            },
-            {
                 title: 'Temple of the Tooth - Kandy',
                 description: 'The tour then continues to Kandy, the cultural capital and last royal kingdom of Sri Lanka. Nestled among lush hills and centered around a scenic lake, Kandy offers a calm yet deeply spiritual atmosphere. The city is home to the sacred Temple of the Tooth Relic, one of the most important Buddhist pilgrimage sites in the world. Cultural performances, traditional architecture, and vibrant local life provide visitors with a meaningful insight into Sri Lanka\'s living heritage and traditions.'
             },
@@ -56,7 +52,7 @@ const destinationsData = {
         ],
         images: [
             'images/sigiriya.png',
-            'images/polonnaru.png',
+            'images/wes.png',
             'images/kandy1.png',
             'images/B1.png'
         ]
@@ -533,10 +529,15 @@ destinationsData['grand-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'images/wes.png',
-        'images/sigiriya.png',
+        'images/Neg.png',
+        'images/Anu.png',
         'images/polonnaru.png',
-        'images/ella.png'
+        'images/kandy.png',
+        'images/N.png',
+        'images/ella.png',
+        'images/7.png',
+        
+        'images/M.png'
     ]
 };
 
@@ -670,10 +671,18 @@ destinationsData['ultimate-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'images/w1.png',
+        'images/Neg.png',
+        'images/Anu.png',
         'images/sigiriya.png',
+        'images/kandy.png',
+        'images/N.png',
         'images/ella.png',
-        'images/polonnaru.png'
+        'images/7.png',
+        'images/sin.png',
+        'images/M.png',
+        'images/galle.png',
+        'images/7.png'
+        
     ]
 };
 
@@ -725,10 +734,10 @@ destinationsData['beach-vacation-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'images/ella.png',
-        'images/B1.png',
+        'images/7.png',
         'images/galle.png',
-        'images/E1.png'
+        'images/M.png'
+        
     ]
 };
 
@@ -780,10 +789,10 @@ destinationsData['hill-country-escape'] = {
         'Personal expenses'
     ],
     images: [
-        'images/polonnaru.png',
-        'images/ella.png',
-        'images/B1.png',
-        'images/sigiriya.png'
+        'images/kandy.png',
+        'images/N.png',
+        'images/H.png'
+        
     ]
 };
 
@@ -843,10 +852,13 @@ destinationsData['highlights-tour-sri-lanka'] = {
         'Personal expenses'
     ],
     images: [
-        'images/B1.png',
+        'images/Anu.png',
+        'images/Tri.png',
         'images/sigiriya.png',
-        'images/galle.png',
-        'images/polonnaru.png'
+        'images/kandy.png',
+        'images/N.png',
+        'images/Co.png'
+        
     ]
 };
 
