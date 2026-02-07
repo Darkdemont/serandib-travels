@@ -246,7 +246,7 @@ function displayPackages() {
     // Update page title and breadcrumb
     document.getElementById('categoryTitle').textContent = categoryName;
     document.getElementById('categoryBreadcrumb').textContent = categoryName;
-    document.title = `${categoryName} - TRAVELIN`;
+    document.title = `${categoryName} - Ceylonova Tours`;
 
     const container = document.getElementById('packagesContainer');
 

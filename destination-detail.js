@@ -62,7 +62,7 @@ function loadDestinationDetails(destId) {
     currentDestination = dest; // Store for booking form
     
     // Update page title
-    document.title = `${dest.name} - TRAVELIN`;
+    document.title = `${dest.name} - Ceylonova Tours`;
     
     // Update header
     document.getElementById('destTitle').textContent = dest.name;
